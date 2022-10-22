@@ -1,0 +1,98 @@
+.sub-section{
+    display: flex;
+    justify-content: center;
+
+    .subscribe{
+        display: grid;
+        margin-top: 100px;
+        padding: 20px 80px;
+        margin-bottom: 30px;
+        width: 1687px;
+        height: 806px;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.8) 100%);
+        border-radius: 24px;
+        justify-content: center;
+        align-items: center;
+       
+
+        h3{
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 72px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .sub-mail{
+            display: flex;
+            justify-content: space-between;
+            
+            img{
+               margin-left: -120px;
+               margin-bottom: -85px;
+               width: 570px;
+               height: 408px;
+            }
+
+            .mail{
+                // margin-right: 50px;
+                margin: 40px 60px;
+                p{
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 48px;
+                    color: #FFFFFF;
+                    width: 783px;
+                }
+            }
+            .input{
+                margin-top: 30px;
+                svg{
+                    position: absolute;
+                    margin-left: 30px;
+                    margin-top: 25px;
+                    font-size: 30px;
+                }
+                input{
+                    width: 823px;
+                    height: 80px;
+                    border: none;
+                    background: #FFFFFF;
+                    border-radius: 4px;
+                    padding: 30px 120px;
+                    font-weight: 500;
+                    font-size: 20px;
+        
+                    ::placeholder{
+                        font-weight: 500;
+                        font-size: 26px;
+                        line-height: 54px;
+                        color: rgba(0, 0, 0, 0.5);
+                       
+                     
+                    }
+                    
+                }
+                input:focus {
+                    outline:none;
+                }
+                button{
+                    display:inline-block;
+                    width: 250px;
+                    height: 70px;
+                    background: #5441F3;
+                    border-radius: 8px;
+                    margin-left: -255px !important;
+                    border: none;
+                    color: #eee;
+                    font-weight: 500;
+                    font-size: 22px;
+                    
+                }
+                
+            }
+
+        }
+
+    }
+}
