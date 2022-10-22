@@ -1,0 +1,43 @@
+.navbar{
+    background: #F7F7F7;
+    display: flex;           
+    list-style-type: none;
+    margin: 0 0;
+    padding: 20px 40px;        
+    .logo{
+        // margin-left: 30px;
+        li{
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 54px;
+            img{
+                width: 72.19px;
+                height: 68px;
+            }
+        }
+
+    }
+
+    .nav-items{
+        display: flex;
+        
+        li{
+            text-decoration: none;
+            display: flex;
+            justify-content: space-around;
+            margin-right: 100px;
+            
+        }
+        .join{
+            span{
+                margin-left: 10px;
+            }
+            
+        }
+    }
+
+        
+
+        
+
+}
