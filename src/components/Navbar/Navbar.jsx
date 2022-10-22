@@ -28,8 +28,11 @@ const NavBar = () => {
                     About Us
                 </li>
                 <li className='join'>
-                Are you a therapist? Join Us
-                <span><BsChevronDown/></span>
+                Are you a therapist ? 
+                <span>
+                    <button>
+                     Join Us
+                </button></span>
                 </li>
             </div>
            
