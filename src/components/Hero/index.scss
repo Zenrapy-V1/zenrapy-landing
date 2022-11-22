@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-direction: row;
     .left{
         width: 823px;
         margin: 100px 100px;
@@ -28,6 +29,7 @@
             border-radius: 9.00091e+17px;
             color: #eee;
             font-size: 20px;
+            border: none;
         }
     }
 
@@ -36,7 +38,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url("../../assets/heroBg.png");
+        background-image: url("../../assets/heroImage.png");
         background-position: right bottom;
         background-repeat: no-repeat;
         background-size: contain;
@@ -49,6 +51,10 @@
             margin-right: 140px;
         }
 
+        .mobile-img{
+            display: none;
+        }
+
         .elipse{
             position: absolute;
             margin-top: 41rem;
@@ -57,4 +63,83 @@
             height: 80px;
         }
     }
+}
+
+
+@media screen and (max-width: 960px) {
+    .hero {
+            flex-direction: column;
+    .left {
+        width: 823px;
+        margin: 20px 20px;
+
+        h3 {
+            width: 353px;
+            // height: 85px;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        p {
+            margin-top: -40px;
+            margin-bottom: -40px;
+            width: 350px;
+            // height: 61px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+        }
+
+        button {
+            width: 336px;
+            height: 53px;
+            background: #5441F3;
+            border-radius: 9.00091e+17px;
+            color: #eee;
+            font-size: 24px;
+            border: none;
+          }
+    }
+
+        .right {
+            margin-top: -30px;            
+            background-image: url("../../assets/mobileHeroBg.png");
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 380px;
+            height: 389px;
+    
+            // margin-left: 0px;
+            .main-image {
+                width: 352px;
+                height: 362px;
+                margin-right: 140px;
+            }
+
+            .main-image{
+                width: 230px;
+                    height: 329px;
+                    display: none;
+                }
+            .mobile-img {
+                display: block;
+                width: 322px;
+                    height: 302px;
+                margin-top: 50px;
+            }
+            .elipse {
+                display: none;
+                position: absolute;
+                margin-top: 41rem;
+                margin-right: 25rem;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
+   }
 }

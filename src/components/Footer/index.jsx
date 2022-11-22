@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./index.scss"
 import { BsFacebook, BsInstagram, BsTwitter} from 'react-icons/bs'
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo1.png"
 
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className='logo'>
                     <li>
                         <img  src={Logo} alt="" />
-                        Zenrapy
+                        
                     </li>
                  </div>
                   <p>
@@ -43,7 +43,7 @@ const Footer = () => {
                         </ul>
                         
                     </div>
-                    <div className='help product'>
+                    <div className='product help'>
                     <h5>Help and Support</h5>
                         <ul>
                             <li>

@@ -1,33 +1,54 @@
-.navbar{
+.nav-container{
+    .navbar{
     background: #F7F7F7;
     display: flex;           
     list-style-type: none;
     margin: 0 0;
     padding: 20px 40px;        
-    .logo{
-        // margin-left: 30px;
-        li{
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 54px;
-            img{
-                width: 72.19px;
-                height: 68px;
+        .logo{
+            // margin-left: 30px;
+            li{
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 54px;
+                img{
+                    width: 205px;
+                    height: 75px;
+                }
             }
+
+        }
+        .nav-icon {
+            display: none;
         }
 
-    }
-
-    .nav-items{
+    .nav-menu{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .nav-item .active {
+                color: #ffdd40;
+                border: 1px solid #ffdd40;
+            }
+        
+           
+        
+        .home{           
+            font-weight: 600;
+            font-size: 1.55rem;
+            line-height: 54px;
+        }
         
         li{
             text-decoration: none;
             display: flex;
             justify-content: space-around;
             margin-right: 100px;
+            color: #000000;
+            font-size: 1.2rem;
+            line-height: 48px;
+            font-weight: 500;
             
         }
         .join{
@@ -37,9 +58,9 @@
             span{
                 margin-left: 10px;
                 button{
-                    width: 223px;
-                    height: 50px;
-                    background: #5441F3;
+                    width: 353px;
+                    height: 55px;
+                    background: #00B8A0;
                     border-radius: 9.00091e+17px;
                     color: #eee;
                     font-size: 20px;
@@ -48,9 +69,103 @@
             
         }
     }
-
         
+}
 
-        
+.nav-btn{
+    display: none;
+}
+ 
+}
 
+
+
+@media screen and (max-width: 960px) {
+    .nav-container {
+             background: #F7F7F7;
+            display: flex;
+            list-style-type: none;
+            margin: 0 0;
+            width: 428px;
+            height: 76px;
+            .navbar {
+                    flex-direction: column;
+                        height: auto;
+                .nav-icon {
+                    // display: flex;
+                        display: block;
+                        position: absolute;
+                        margin-left: 100px;
+                        top: 0;
+                        right: 0;
+                        transform: translate(500%, 30%);
+                        font-size: 2.2rem;
+                        cursor: pointer;
+                        color: #5441F3;
+                    }
+                                    .logo {
+                    
+                            // margin-left: 30px;
+                            li {
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 54px;
+                    
+                                img {
+                                    width: 105px;
+                                    height: 45px;
+                                }
+                            }
+
+                            
+                    
+                        }
+                          .nav-menu {
+                             display: flex;
+                             flex-direction: column;
+                             width: 100%;
+                             border-top: 1pxsolid #fff;
+                             position: absolute;
+                             top: 80px;
+                             left: -110%;
+                             opacity: 1;
+                             transition: all 0.5s ease;
+
+                            .join{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                span{
+                                    margin-left: 10px;
+                                    button{
+                                        width: 15.8125rem;
+                                        height: 3.4375rem;
+                                        background: #00B8A0;
+                                        border-radius: 9.00091e+17px;
+                                        color: #eee;
+                                        font-size: 16px;
+                                        margin-bottom: 0.625rem;
+                                    }
+                                }
+                                
+                            }
+                         }
+                         .nav-menu.active {
+                            background: #F7F7F7;
+                            left: 0px;
+                            opacity: 1;
+                            transition: all 0.5s ease;
+                            z-index: 1;
+                            width: 100vw;
+                            padding-left: 70px;
+                            
+                        }
+                }
+                       
+       }
+        .nav-btn {
+            display: block !important;
+            color: #5441F3;
+            
+        }
 }

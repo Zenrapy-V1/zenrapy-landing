@@ -26,10 +26,10 @@
                 line-height: 54px;
                 list-style-type: none;
                 
-                img{
-                    width: 72.19px;
-                    height: 68px;
-                }
+                img {
+                        width: 180px;
+                        height: 65px;
+                    }
             }
     
         }
@@ -68,7 +68,7 @@
 
             h5{
                 font-weight: 600;
-                font-size: 24px;
+                font-size: 1.3125rem;
                 line-height: 51px;                
                 color: #000000;
                 margin-left: 30px;
@@ -77,7 +77,7 @@
                 list-style-type: none;
                 li{
                     font-weight: 500;
-                    font-size: 24px;
+                    font-size: 18px;
                     line-height: 36px;                    
                     color: #4B4C59;
                 }
@@ -92,5 +92,117 @@
         }
        }
     }
+
+}
+
+
+@media screen and (max-width: 960px) {
+    .footer-section {
+            display: grid;
+                
+            .footer {
+                padding: 80px;
+                display: grid;
+                justify-content: space-between;
+                align-items: center;
+    
+                width: 547px;
+                background: #FFFFFF;
+    
+                .left-section {
+                    display: grid;
+                    justify-content: start;
+                    align-items: center;
+    
+                    .logo {
+    
+                        // margin-left: 30px;
+                        li {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 24px;
+                            list-style-type: none;
+                            text-align: center;
+                            
+    
+                            img {
+                                width: 125px;
+                                 height: 50px;
+                            }
+                        }
+    
+                    }
+    
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        width: 90vw;
+                        color: #4B4C59;
+                        text-align: center;
+                    }
+    
+                    .socials {
+                        display: flex;
+                        margin-top: 0px;
+                        margin-bottom: 50px;
+                        align-items: center;
+                        justify-content: center;
+    
+                        svg {
+                            font-size: 30px;
+                            margin-right: 10px;
+    
+                        }
+                    }
+    
+                }
+    
+                .right-section {
+                    display: grid;
+                    justify-content: start;
+                    align-items: center;
+                    text-align: center;
+    
+    
+                    .product {
+                        display: grid;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 0px;
+                        
+    
+                        h5 {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 36px;
+                            color: #000000;
+                            margin-left: 30px;
+                        }
+    
+                        ul {
+                            list-style-type: none;
+                            margin-bottom: 30px;
+                            margin-left: 30px;
+    
+                            li {
+                                font-weight: 500;
+                                font-size: 24px;
+                                line-height: 36px;
+                                color: #4B4C59;
+                            }
+                        }
+                    }
+    
+                    .help {
+                        // margin-left: 10px;
+                    }
+    
+                    .about {}
+                }
+            }
+    
+        }
 
 }

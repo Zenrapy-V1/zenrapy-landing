@@ -1,0 +1,123 @@
+.contact{
+
+}
+
+
+
+
+.contact-page{
+    background-image: url("../../assets/contactBg.png");
+    background-repeat: no-repeat;
+    // background-size: contain;
+    width: 100%;
+    height: 60.375rem;
+
+    .contact-container{
+        display: flex;
+        // justify-content: space-between;
+        padding: 1.25rem 4.375rem;
+
+        .left{
+            display: grid;
+
+            h3{
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 96px;
+                /* identical to box height */
+                color: #FFFFFF;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 1.75rem;
+                line-height: 48px;
+                color: #FFFFFF;
+            }
+
+            form{
+                display: grid;
+                input{
+                    margin-bottom: 20px;
+                    width: 777px;
+                    height: 73px;
+                    background: #FFFFFF;
+                    color: rgba(0, 0, 0, 0.6);
+                    padding-left: 20px;
+                    font-size: 1.25rem;
+                }
+
+                textarea{
+                    width: 777px;
+                    height: 204px;
+                    background: #FFFFFF;
+                    color: rgba(0, 0, 0, 0.6);
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    margin-top: 1.875rem;
+                    font-size: 1.25rem;
+                }
+
+                button{
+                    width: 777px;
+                    height: 71px;
+                    background: #5441F3;
+                    border-radius: 9.00091e+17px;
+                    color: #FFFFFF;
+                    border: none;
+                    margin-top: 0.875rem;
+                }
+            }
+        }
+
+        .right{
+            display: grid;
+            padding: 0 80px;
+            // margin-top: 3rem;
+            .call{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 4.375rem;
+                h3{
+                    color: #FFFFFF;
+                    // margin-left: 5.125rem;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    // float: right;
+                }
+                h2{
+                    color: #FFFFFF;
+                    font-size: 4.2rem;
+                    font-weight: 600;
+                }
+            }
+            button{
+                background: #04B90B;
+                border-radius: 9.00091e+17px;
+                width: 46.5625rem;
+                height: 4.4375rem;
+                color: #FFFFFF;
+                font-size: 20px;
+                margin-top: 76%;
+                margin-left: 12%;
+            }
+
+
+        }
+        
+       
+    }
+    .down{
+        display: flex;
+        padding: 1.25rem 6.25rem;
+        margin-top: 1.875rem;
+        p{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+
+    }
+}

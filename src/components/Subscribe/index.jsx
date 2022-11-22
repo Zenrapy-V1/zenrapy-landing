@@ -20,7 +20,8 @@ const Subscribe = () => {
                         <div className='input'>
                             <AiOutlineMail />
                             <input placeholder='Mail Address' />
-                            <button>Subscribe</button>
+                            <button                     
+                            >Subscribe</button>
                         </div>
                         
                     </div>
