@@ -178,6 +178,13 @@ const customStyles = {
                         </textarea>
                        </div>
 
+                        <div className='text'>
+                        <p>Please list your home massage tools (Separate by enter key or comma)</p>
+                        <textarea >
+
+                        </textarea>
+                       </div>
+
                        <div className='links'>
                         <div>
                             <p>Facebook profile Link</p>

@@ -62,3 +62,85 @@
 }
    
 }
+
+
+@media screen and (max-width: 960px) {
+    .about {}
+        
+        .about-page {
+            // display: flex;
+    
+            .about-top {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+    
+                .right-img {
+                    img {
+                        width: 100vw;
+                        height: 300px;
+    
+                    }
+                }
+    
+                .right-about {
+                    // display: grid;
+                    // justify-content: center;
+                    // align-items: center;
+                    padding: 1.5rem;
+                    background-color: #020516;
+                    text-align: center;
+    
+                    h3 {
+                        color: #fff;
+                        font-weight: 600;
+                        font-size: 1.28rem;
+                    }
+    
+                    p {
+                        margin-top: 2rem;
+                        color: #fff;
+                        font-size: 1rem;
+                    }
+                }
+    
+            }
+    
+            .mission-section {
+                margin-top: 4rem;
+                text-align: center;
+    
+                // display: flex;
+                h2 {
+                    font-size: 1.5rem;
+                    color: #020516;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+    
+                .mission {
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 100vw;
+                    text-align: center;
+                    img {
+                            width: 100vw;
+                            height: 300px;
+                    
+                        }
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1rem;
+                        padding: 20px;
+                        text-justify: distribute;
+                        // text-align: center;
+                    }
+                }
+            }
+    
+        }
+}

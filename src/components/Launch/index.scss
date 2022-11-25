@@ -4,9 +4,7 @@
     display: grid;
     justify-content: center;
     text-align: center; 
-    h1{
-        color: black;
-    }
+    
     p{
         font-weight: 400;
         font-size: 26px;
@@ -56,6 +54,12 @@
 @media screen and (max-width: 960px) {
     .launch {
         margin-top: 70px;
+            h2{
+                font-size: 20px;
+                font-weight: 600;
+                
+            }
+        
          p{
         font-weight: 400;
         font-size: 16px;
@@ -92,7 +96,7 @@
         }
         button{
             display:inline-block;
-            width: 140px;
+            width: 120px;
             height: 60px;
             background: #5441F3;
             border-radius: 8px;

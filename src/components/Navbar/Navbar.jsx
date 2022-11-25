@@ -20,7 +20,7 @@ const NavBar = () => {
               
             <div className="navbar" >
                 <div className='logo'>
-                    <Link to="/about" style={{ textDecoration: 'none' }}>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
                         <li>
                             <img src={Logo} alt="" />                
                         </li>
