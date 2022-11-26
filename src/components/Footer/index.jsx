@@ -47,10 +47,10 @@ const Footer = () => {
                     <h5>Help and Support</h5>
                         <ul>
                             <li>
-                            Help center 
+                              Help center 
                             </li>
                             <li>
-                            Contact
+                              Contact
                             </li>
                             
                         </ul>

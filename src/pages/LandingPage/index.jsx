@@ -7,7 +7,7 @@ import Therapist from "../../components/Therapist"
 import Subscribe from '../../components/Subscribe'
 import Booking from "../../components/BookSession"
 import Footer from '../../components/Footer'
-
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Landing = () => {
 
@@ -18,7 +18,9 @@ const Landing = () => {
            <Launch />
            <Therapist />
            <Subscribe />
-           <Booking />
+           <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
+              <Booking />
+           </AnimationOnScroll>
            <Footer />
         </div>
     );

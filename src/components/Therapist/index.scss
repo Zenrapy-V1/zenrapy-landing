@@ -34,6 +34,10 @@
 @media screen and (max-width: 960px) {
     .therapist {
         margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
         h3 {
                 font-style: normal;
                 font-weight: 600;
@@ -42,7 +46,7 @@
                 color: #000000;
                 text-align: center;
                 width: 80vw;
-                 margin-left: 70px;
+                 margin-left: 0px;
             }
         
             p {
@@ -54,20 +58,23 @@
                 color: #4B4C59;
                 width: 80vw;
                 margin-top: 20px;
-                margin-left: 70px;
+                margin-left: 0px;
         
             }
             .therapist-image{
                 flex-direction: column;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
+                align-items: center;
                 margin-bottom: 0px;
-                margin-top: 20px;
+                margin-top: 0px;
                 width: 423px;
-                margin-left: 60px;
+                margin-left: 0px;
                 img{
-                    width: 355px;
+                    width: 80vw;
                     height: 289px;
+                    margin-top: 30px;
+                    
                 }
             }
     }

@@ -37,7 +37,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
-            line-height: 24px;
+            line-height: 30px;
             width: 458px;
             color: #4B4C59;
         }
@@ -139,7 +139,7 @@
                         font-style: normal;
                         font-weight: 500;
                         font-size: 18px;
-                        line-height: 24px;
+                        line-height: 30px;
                         width: 90vw;
                         color: #4B4C59;
                         text-align: center;
@@ -180,7 +180,7 @@
                             font-size: 21px;
                             line-height: 36px;
                             color: #000000;
-                            margin-left: 30px;
+                            margin-left: 50px;
                         }
     
                         ul {
@@ -197,9 +197,17 @@
                         }
                     }
     
-                    .help {
-                        // margin-left: 10px;
-                    }
+                    .help{
+           
+                    h5 {
+                            font-weight: 600;
+                            font-size: 1.3125rem;
+                            line-height: 51px;
+                            color: #000000;
+                            margin-left: 60px !important;
+                     }
+            
+        }
     
                     .about {}
                 }

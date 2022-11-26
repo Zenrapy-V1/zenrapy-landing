@@ -4,6 +4,7 @@ import { BsChevronDown } from 'react-icons/bs'
 import HeroImage from "../../assets/heroImage1.png"
 import HeroBg2 from "../../assets/heroBg2.png"
 import MobileImage from "../../assets/mobileHeroImg.png"
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 const HeroSection = () => {
@@ -27,13 +28,15 @@ const HeroSection = () => {
                 </button>
             </div>
            </div>
-            <div className='right'>
+            <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
+              <div className='right'>
                 <img className='main-image' src={HeroImage} alt="" /> 
                 <img className="mobile-img" src={MobileImage} />
                 <img className='elipse' src={HeroBg2} alt="" />
             </div>
+           </AnimationOnScroll>
             
-        </div>
+          </div>
     );
 }
  
