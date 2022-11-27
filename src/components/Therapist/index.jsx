@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import "./index.scss"
 import { BsChevronDown } from 'react-icons/bs'
-import Therapist1 from "../../assets/therapist1.png"
-import Therapist2 from "../../assets/therapist2.png"
+import Therapist1 from "../../assets/therapist01.png"
+import Therapist2 from "../../assets/therapist02.png"
 import Therapist3 from "../../assets/therapist3.png"
-
-
 
 const Therapist = () => {
 

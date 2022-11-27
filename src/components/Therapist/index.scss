@@ -28,8 +28,56 @@
         display: flex;
         justify-content: space-around;
         margin-top: 50px;
+        padding: 20px;
+        img {
+                margin-right: 15px;
+            }
     }
 }
+
+ @media screen and (max-width: 1600px) {
+.therapist {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 3.125rem;
+            line-height: 75px;
+            color: #000000;
+            text-align: center;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 48px;
+            text-align: center;
+            color: #4B4C59;
+            width: 953px;
+            margin-top: 20px;
+            text-align: center;
+
+        }
+
+        .therapist-image {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            padding: 20px !important;
+            img{
+                margin-right: 15px;
+                width: 400px;
+            }
+        }
+    }
+ }
 
 @media screen and (max-width: 960px) {
     .therapist {

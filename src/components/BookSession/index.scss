@@ -44,7 +44,64 @@
         
     }
 }
-
+@media screen and (max-width: 1600px) {
+    .book-session {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .book {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 6.25rem;
+                width: 99.6875rem;
+                height: 37.375rem;
+                background: rgba(179, 188, 241, 0.5);
+                padding: 5rem;
+                display: flex;
+                justify-content: space-between;
+    
+                h4 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 2.5rem;
+                    line-height: 3.5rem;
+                    color: #000000;
+                    // margin-top: 20px;
+                }
+    
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 2.0rem;
+                    line-height: 3.375rem;
+                    color: #4B4C59;
+                    width: 39.5625rem;
+                    margin-top: 20px;
+                }
+    
+                button {
+                    width: 31.875rem;
+                    height: 4.125rem;
+                    background: #5441F3;
+                    border-radius: .5rem;
+                    color: white;
+                    font-size: 1.25rem;
+                    border: none;
+                    margin-top: 20px;
+                }
+    
+    
+    
+            }
+            img{
+                width: 450px;
+                // height: 340px;
+                // margin-top: 20px;
+            }
+        }
+}
 
 @media screen and (max-width: 960px) {
     .book-session {
