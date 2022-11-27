@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import "./index.scss"
 import { BsChevronDown } from 'react-icons/bs'
-import HeroImage from "../../assets/heroImage1.png"
+import HeroImage from "../../assets/heroImage2.png"
 import HeroBg2 from "../../assets/heroBg2.png"
-import MobileImage from "../../assets/mobileHeroImg.png"
+import MobileImage from "../../assets/heroImage2.png"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 

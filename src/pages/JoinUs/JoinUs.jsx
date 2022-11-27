@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./index.scss"
 import { BsChevronDown } from 'react-icons/bs'
-import Logo from "../../assets/logo1.png"
+import Logo from "../../assets/logo2.png"
 import Upload from "../../assets/upload.png"
 import SubmitMark from "../../assets/submitMark.png"
 import Footer from '../../components/Footer'
@@ -66,7 +66,7 @@ const customStyles = {
     return (
         <>  
         {active === 1 && 
-        <div className='therapist_join'>
+        <div className='therapist_join' id='no-background'>
             <div className='join-form'>
                 <div className='left-text'>
                     <img src={Logo} />

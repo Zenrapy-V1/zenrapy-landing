@@ -12,8 +12,8 @@
                 font-size: 28px;
                 line-height: 54px;
                 img{
-                    width: 205px;
-                    height: 75px;
+                    // width: 205px;
+                    height: 120px;
                 }
             }
 
@@ -58,12 +58,13 @@
             span{
                 margin-left: 10px;
                 button{
-                    width: 353px;
+                    width: 323px;
                     height: 55px;
                     background: #00B8A0;
                     border-radius: 9.00091e+17px;
                     color: #eee;
                     font-size: 20px;
+                    border: none;
                 }
             }
             
@@ -102,6 +103,9 @@
                         font-size: 2.2rem;
                         cursor: pointer;
                         color: #5441F3;
+                        svg{
+                            margin-left: -7px;
+                        }
                     }
                                     .logo {
                     
@@ -112,8 +116,9 @@
                                 line-height: 54px;
                     
                                 img {
-                                    width: 105px;
-                                    height: 45px;
+                                    // width: 105px;
+                                    height: 75px;
+                                    margin-top: -20px;
                                 }
                             }
 
@@ -145,6 +150,7 @@
                                         color: #eee;
                                         font-size: 16px;
                                         margin-bottom: 0.625rem;
+                                        border: none;
                                     }
                                 }
                                 
@@ -166,6 +172,7 @@
         .nav-btn {
             display: block !important;
             color: #5441F3;
+            
             
         }
 }

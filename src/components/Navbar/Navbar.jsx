@@ -3,7 +3,7 @@ import "./index.scss"
 import { BsChevronDown, } from 'react-icons/bs'
 import { AiOutlineMenu,} from 'react-icons/ai'
 import {FaTimes } from 'react-icons/fa'
-import Logo from "../../assets/logo1.png"
+import Logo from "../../assets/logo2.png"
 import { Link } from 'react-router-dom'
 
 

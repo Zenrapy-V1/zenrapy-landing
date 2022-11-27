@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./index.scss"
 import { BsFacebook, BsInstagram, BsTwitter} from 'react-icons/bs'
-import Logo from "../../assets/logo1.png"
+import Logo from "../../assets/logo2.png"
 
 
 const Footer = () => {
