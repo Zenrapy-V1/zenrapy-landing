@@ -17,12 +17,14 @@ const AboutPage = () => {
                 <h3>By aiming to make mobile massage bookings more 
                     accessible, we founded zenrapy!
                 </h3>
-                <p>Zenrapy is a mobile massage booking paltform for clients where we aim to
-                    connect clients to professional massues of their choice which is closest to
-                    them, over the recent trend of times we have come to discover that people
-                    no longer want to go to spas to get massaged This is because massage is
-                    for relaxation anyways and did rather get massaged in their comfort zone 
-                    instead of stressing around for it..........................
+                <p>
+                    Zenrapy, A mobile booking on-demand wellness platform connecting users to top, talented,
+                    and licensed massage professionals, allows users to book or schedule same-day/ at later
+                    time wellness services in the comfort of their home/offices. We are specialists and
+                    innovators in connecting patients and clients with trusted and experienced professionals
+                    (uber for masseurs) Our mission is to bring comfort to patients and clients by making 
+                    mobile massage more accessible, we look forward to making vital and wellness treatments
+                    seamless and more accessible to everyone. wherever you are, we come to you.
                 </p>
             </div>
            </div>
