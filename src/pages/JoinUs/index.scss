@@ -417,7 +417,7 @@
     
                         .select {
                             width: 100%;
-                            height: 80px;
+                            height: 100%;
                             border: 1px solid rgba(0, 0, 0, 0.7);
     
                             .msl {
@@ -1074,11 +1074,14 @@
     
                     .multiple-select {
                         margin-top: 20px;
-    
+                        margin-bottom: 20px;
+                        
+                            
                         .select {
                             width: 80vw;
-                            height: 90px;
+                            height: 80%;
                             border: 1px solid rgba(0, 0, 0, 0.7);
+                            
     
                             .msl {
                                 overflow: hidden;

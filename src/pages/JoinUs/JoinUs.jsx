@@ -18,7 +18,6 @@ const JoinUs = () => {
     const [activeBut, setActiveBut] = useState(0)
 
     const  options  = [
-    { label:  'Massage service types you do', value:  'Massage service types you do'  },
     { label:  'Swedish massage', value:  'Swedish massage'  },
     { label:  'Hot stone massage', value:  'Hot stone massage'  },
     { label:  'Deep tissue massage', value:  'Deep tissue massage'  },
@@ -69,7 +68,9 @@ const customStyles = {
         <div className='therapist_join' id='no-background'>
             <div className='join-form'>
                 <div className='left-text'>
-                    <img src={Logo} />
+                    <Link to="/" >
+                         <img src={Logo} />
+                    </Link>
                     <div className='logo-text'>
                         <h3>Are you a massage Therapist?</h3>
                         <p>Send in your application now to join zenrapy</p>
@@ -119,11 +120,12 @@ const customStyles = {
             <div className='page2-form'>
                 <h3>Sign Up</h3>
                  <div className='multiple-select'>
+                    <p>Massage service types you do</p>
                     <MultiSelect
                         className="select"
                         onChange={handleOnchange}
                         options={options}
-                        placeholder="Massage service types you do"
+                        placeholder="You can select multiple service types"
                     />
                 </div>
                
