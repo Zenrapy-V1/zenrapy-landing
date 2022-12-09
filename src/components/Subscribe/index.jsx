@@ -2,8 +2,36 @@ import React, { useState } from 'react'
 import "./index.scss"
 import { AiOutlineMail} from 'react-icons/ai'
 import SubImage from "../../assets/subscribeImage.png"
+import {useNavigate} from 'react-router-dom';
+import axios from "axios"
 
-const Subscribe = () => {
+
+const Subscribe = ({modalShow, setModalShow}) => {
+    const [email, setEmail] = useState("")
+    const navigate = useNavigate();
+
+        console.log(email)
+
+        const submitForm = async (e) => {
+            e.preventDefault();
+            const emailData = {
+            email   
+            }
+
+        axios.post("http://zenrapy.up.railway.app/landing_page/newsletter_subscription/",  emailData,{
+             headers: {
+                'Content-Type': 'application/json'
+            }
+            }).then((response) => {
+            setEmail("");
+            setModalShow(true)
+                
+            }).catch(error => {
+            console.log(error)
+            })    
+            navigate.push("/about")
+        }
+
 
     return (  
         <section className='sub-section'>     
@@ -17,12 +45,21 @@ const Subscribe = () => {
                         <p>Suscribe to our news letter to get latest updtaes about
                             our services and weekly health tips 
                         </p>
-                        <div className='input'>
+                        <form className='input' onSubmit={submitForm}>
                             <AiOutlineMail />
-                            <input placeholder='Mail Address' />
-                            <button                     
+                            <input
+                                 name='email' 
+                                value={email} 
+                                type="text" 
+                                onChange={(e)=>setEmail(e.target.value)}
+                                placeholder='Mail Address' 
+                             />
+                            <button 
+                            type="submit" 
+                            name="submit"  
+                            // onClick={() => setModalShow(true)}                   
                             >Subscribe</button>
-                        </div>
+                        </form>
                         
                     </div>
                 </div>

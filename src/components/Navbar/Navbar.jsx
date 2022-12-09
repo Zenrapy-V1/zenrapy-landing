@@ -6,7 +6,6 @@ import {FaTimes } from 'react-icons/fa'
 import Logo from "../../assets/logo2.png"
 import { Link } from 'react-router-dom'
 
-
 const NavBar = () => {
     const [toggle, setToggle] = useState(false);
     // const [navbar, setNavbar] = useState(false);
@@ -34,11 +33,11 @@ const NavBar = () => {
                     </li>
                 </Link>
 
-                <Link to="/contact" style={{ textDecoration: 'none' }}>
+                {/* <Link to="/contact" style={{ textDecoration: 'none' }}>
                         <li className='nav-item'>
                             Contact
                         </li>
-                    </Link>
+                    </Link> */}
 
                     {/* <li>
                         Blogs

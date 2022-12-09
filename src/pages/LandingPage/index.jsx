@@ -8,22 +8,31 @@ import Subscribe from '../../components/Subscribe'
 import Booking from "../../components/BookSession"
 import Footer from '../../components/Footer'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import VerticallyCenteredModal from "./Modal"
 
 const Landing = () => {
+ const [modalShow, setModalShow] = useState(false);
 
     return (  
         <div className='landing'>
             <NavBar />
            <HeroSection />
-           <Launch />
+           <Launch modalShow={modalShow} setModalShow={setModalShow} />
            <Therapist />
-           <Subscribe />
+           <Subscribe modalShow={modalShow} setModalShow={setModalShow} />
            <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
               <Booking />
            </AnimationOnScroll>
            <Footer />
+           <VerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+        />
         </div>
     );
 }
  
 export default Landing;
+
+
+
