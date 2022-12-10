@@ -20,3 +20,20 @@
 
     }
 }
+
+
+
+  @media screen and (max-width: 960px) {
+    .modal-cont {
+        // width: 80vw;
+            .modal-body {
+                width: 80vw;
+                height: 20vh;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+    
+            }
+        }
+
+  }
