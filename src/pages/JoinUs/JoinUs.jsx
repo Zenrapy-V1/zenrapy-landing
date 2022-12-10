@@ -111,7 +111,10 @@ const handleSubmitting = () => {
         .then(res=>{
            setImageLoading("Uploaded")
             setLincese(res.data.secure_url)
-        })
+        }).catch(error => {
+            console.log(error)
+            setImageLoading("Reupload a file")
+            })
        }
 
 
@@ -147,6 +150,8 @@ const handleSubmitting = () => {
                 
             }).catch(error => {
             console.log(error)
+            setActive(6)
+            setSubmitState("Submit applicaiton")
             }) 
 
             console.log(submitData)
@@ -440,6 +445,31 @@ const handleSubmitting = () => {
                      <div className='submit-item'>
                       <Link to="/">
                          <button>Done</button>
+                      </Link>
+                    </div>
+                    
+                 </div>
+                               
+              </div>  
+        </div>
+       }
+       {active === 6 &&
+       <div className='therapist_join'>
+             <div className='page2'>
+                 <div className='submit-page'>
+                   
+                     <div className='submit-item'>
+                      <h5>Whoops!!! There's an error submitting your form </h5>
+                        
+                    </div>
+                     <div className='submit-item'>
+                       <p>Please try again</p>
+                    </div>
+                     <div className='submit-item'>
+                      <Link to="/">
+                         <button
+                         onClick={() => setActive(3)}
+                         >Back</button>
                       </Link>
                     </div>
                     

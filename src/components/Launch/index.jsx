@@ -7,12 +7,17 @@ import axios from "axios"
 import {useNavigate} from 'react-router-dom';
 
 
-const Launch = ({modalShow, setModalShow}) => {
+const Launch = ({modalShow, setModalShow, errorModalShow, setErrorModalShow}) => {
     const [success, setSuccess] = useState("false")
     const [email, setEmail] = useState("")
+    const [join, setJoin] = useState("Join waitlist")
     const navigate = useNavigate();
 
     console.log(email)
+
+    const handleJoin = () => {
+      setJoin("Joining...")
+    }
 
  const submitForm = async (e) => {
     e.preventDefault();
@@ -27,11 +32,14 @@ const Launch = ({modalShow, setModalShow}) => {
     }).then((response) => {
      setEmail("");
      setModalShow(true)
+     setJoin("Join waitlist")
         
     }).catch(error => {
       console.log(error)
+      setErrorModalShow(true)
+      setJoin("Join waitlist")
     })    
-    navigate.push("/about")
+    
    }
 
     return (
@@ -51,8 +59,8 @@ const Launch = ({modalShow, setModalShow}) => {
             <button
             type="submit" 
             name="submit"
-            // onClick={() => setModalShow(true)}
-            >Joint waitlist</button>
+            onClick={handleJoin}
+            >{join}</button>
            </form>
             
         </div>

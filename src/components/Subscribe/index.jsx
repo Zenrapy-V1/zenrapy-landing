@@ -6,11 +6,16 @@ import {useNavigate} from 'react-router-dom';
 import axios from "axios"
 
 
-const Subscribe = ({modalShow, setModalShow}) => {
+const Subscribe = ({modalShow, setModalShow, errorModalShow, setErrorModalShow}) => {
     const [email, setEmail] = useState("")
+    const [join, setJoin] = useState("Subscribe")
     const navigate = useNavigate();
 
         console.log(email)
+
+         const handleJoin = () => {
+        setJoin("Subscribing...")
+        }
 
         const submitForm = async (e) => {
             e.preventDefault();
@@ -25,9 +30,12 @@ const Subscribe = ({modalShow, setModalShow}) => {
             }).then((response) => {
             setEmail("");
             setModalShow(true)
+            setJoin("Subscribe")
                 
             }).catch(error => {
             console.log(error)
+            setErrorModalShow(true)
+            setJoin("Subscribe")
             })    
             navigate.push("/about")
         }
@@ -57,8 +65,8 @@ const Subscribe = ({modalShow, setModalShow}) => {
                             <button 
                             type="submit" 
                             name="submit"  
-                            // onClick={() => setModalShow(true)}                   
-                            >Subscribe</button>
+                             onClick={handleJoin}                 
+                            >{join}</button>
                         </form>
                         
                     </div>
