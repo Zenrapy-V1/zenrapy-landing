@@ -25,7 +25,8 @@
 
   @media screen and (max-width: 900px) {
     .modal-cont {
-        // width: 80vw;
+        width: 95%;
+        // height: 50%;
             .modal-body {
                 width: 80%;
                 height: 20vh;
@@ -47,6 +48,7 @@
 
   @media screen and (max-width: 800px) {
       .modal-cont {
+        width: 95%;
 
           // width: 80vw;
           .modal-body {
