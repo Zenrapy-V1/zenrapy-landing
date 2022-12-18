@@ -5,10 +5,13 @@ import "./index.scss"
 import { BsChevronDown } from 'react-icons/bs'
 import axios from "axios"
 import {useNavigate} from 'react-router-dom';
+import FlashMessage from "../../pages/layout/landingFlash"
+import FlashMessageError from "../../pages/layout/flashMessage"
 
 
 const Launch = ({modalShow, setModalShow, errorModalShow, setErrorModalShow}) => {
     const [success, setSuccess] = useState("false")
+    const [error, setError] = useState("false")
     const [email, setEmail] = useState("")
     const [join, setJoin] = useState("Join waitlist")
     const navigate = useNavigate();
@@ -31,13 +34,15 @@ const Launch = ({modalShow, setModalShow, errorModalShow, setErrorModalShow}) =>
     }
     }).then((response) => {
      setEmail("");
-     setModalShow(true)
+    //  setModalShow(true)
      setJoin("Join waitlist")
+     setSuccess(true)
         
     }).catch(error => {
       console.log(error)
-      setErrorModalShow(true)
+      // setErrorModalShow(true)
       setJoin("Join waitlist")
+      setError(true)
     })    
     
    }
@@ -62,8 +67,13 @@ const Launch = ({modalShow, setModalShow, errorModalShow, setErrorModalShow}) =>
             onClick={handleJoin}
             >{join}</button>
            </form>
-            
         </div>
+        {
+          success === true ? <FlashMessage color="warning" message="We are glad to have you!!! 🥳" /> : ""
+        }
+        {
+          error === true ? <FlashMessageError color="warning" message="Whoops!!! There's an error, Please try again" /> : ""
+        }
         </>
     );
 }

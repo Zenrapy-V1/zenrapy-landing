@@ -12,12 +12,12 @@ import Select from 'react-select'
 import axios from "axios"
 import {useNavigate} from 'react-router-dom';
 import Uploader from "./Uploader"
+import FlashMessage from "../layout/flashMessage"
 
 const JoinUs = () => {
     const [active, setActive] = useState(1)
-    const [interest, setInterest] = useState([])  
     const [value, setvalue] = useState('')
-    const [label, setLabel] = useState('')
+    const [error, setError] = useState(false)
     const [activeBut, setActiveBut] = useState(0)
     const [email, setEmail] = useState("")
     const [fullName, setName] = useState("")
@@ -33,6 +33,7 @@ const JoinUs = () => {
     const [instagram, setInstagram] = useState("")
     const [imageLoading, setImageLoading] = useState("Upload a file")
      const [submitState, setSubmitState] = useState("Submit applicaiton")
+     const [nextState, setNextState] = useState(false)
 
     const [data, setData] = useState({
        fullName: "",
@@ -192,6 +193,38 @@ const handleSubmitting = () => {
     console.log(licence)
     console.log(experience.value)
 
+    const handleError1 = () => {
+        if(email === "" 
+        || fullName === "" 
+        || state === "" 
+        || phoneNumber === ""
+        || gender === ""  
+      ){
+            setError(true)
+        }
+     }
+
+     const handleError2 = () => {
+        if(feedback === "" 
+        ||services === "" 
+        || licence === "" 
+        || experience === "" || tools === "" || facebook === "" || instagram === ""){
+            setError(true)
+        }
+     }
+
+       const handleError3 = () => {
+        if(experience === "" || tools === "" || facebook === "" || instagram === ""){
+            setError(true)
+        }
+     }
+
+     const handleActive2 = () => {
+        if(handleError1){
+            setActive(1) 
+        }
+     }
+
     return (
         <>  
         {active === 1 && 
@@ -222,7 +255,7 @@ const handleSubmitting = () => {
                     <div>
                         <p>Email</p>
                          <input 
-                         type="text" placeholder='' 
+                         type="text" 
                          placeholder=''  
                          onChange={(e)=>setEmail(e.target.value)}
                          value={email}
@@ -233,7 +266,6 @@ const handleSubmitting = () => {
                         <p>Phone</p>
                          <input 
                          type="text" 
-                         placeholder=''
                          placeholder=''  
                          onChange={(e)=>setPhone(e.target.value)}
                          value={phoneNumber} 
@@ -262,10 +294,17 @@ const handleSubmitting = () => {
                          />
                     </div>
                     <button
-                    onClick={() => setActive(2)}
+                        onClick={() => {
+                        // handleError1()
+                        setActive(2)
+                        // handleActive2()
+                        
+                        }}
                     > Next </button>
                 </form>
-                
+                {
+                 error === true ? <FlashMessage color="warning" message="Please enter all details" /> : ""
+                }
             </div>          
                  
         </div>
@@ -463,14 +502,12 @@ const handleSubmitting = () => {
                         
                     </div>
                      <div className='submit-item'>
-                       <p>Please try again</p>
+                       <p>Please check all inputs and try again</p>
                     </div>
                      <div className='submit-item'>
-                      <Link to="/">
-                         <button
-                         onClick={() => setActive(3)}
-                         >Back</button>
-                      </Link>
+                        <button
+                         onClick={() => setActive(4)}
+                        >Back</button>
                     </div>
                     
                  </div>
