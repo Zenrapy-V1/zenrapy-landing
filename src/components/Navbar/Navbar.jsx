@@ -16,54 +16,38 @@ const NavBar = () => {
 
     return (  
         <div className='nav-container'>
-              
             <div className="navbar" >
                 <div className='logo'>
                     <Link to="/" style={{ textDecoration: 'none' }}>
-                        <li>
-                            <img src={Logo} alt="" />                
-                        </li>
+                        <li><img src={Logo} alt="" /></li>
                     </Link>
                 </div>
-
                 <div className={toggle ? "nav-menu active" : "nav-menu"}>
                 <Link to="/" style={{ textDecoration: 'none' }}>
-                    <li className='home nav-item'>
-                        Home
-                    </li>
+                    <li className='home nav-item'>Home</li>
                 </Link>
-
-                {/* <Link to="/contact" style={{ textDecoration: 'none' }}>
-                        <li className='nav-item'>
-                            Contact
-                        </li>
-                    </Link> */}
-
-                    {/* <li>
-                        Blogs
-                    </li> */}
-                    <Link to="/about" style={{ textDecoration: 'none' }}>
-                        <li className='nav-item'>
-                            About Us                
-                        </li>
-                    </Link>
-                    <Link to="/join-us" style={{ textDecoration: 'none' }}>
+                <Link to="/about" style={{ textDecoration: 'none' }}>
+                    <li className='nav-item'>Blog</li>
+                </Link>
+                <Link to="/about" style={{ textDecoration: 'none' }}>
+                    <li className='nav-item'>About Us</li>
+                </Link>
+                    {/* <Link to="/join-us" style={{ textDecoration: 'none' }}>
                         <li className='join nav-item'>                
                         <span>
                             <button>
                             Are you a therapist ? Join Us
                         </button></span>
                         </li>
-                    </Link>
+                    </Link> */}
                     
                 </div>
+                
                 
                 <div className="nav-icon" onClick={handleClick}>
                     {toggle ? <FaTimes /> : <AiOutlineMenu />}
                 </div>
-            
             </div>
-
         </div>
     );
 }

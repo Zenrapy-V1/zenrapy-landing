@@ -12,9 +12,7 @@ const HeroSection = () => {
     return (  
         <div className='hero'>
            <div className='left'>
-            <h3>
-                Just like Uber! we connect you to Top and Talented therapists anywhere in the world.
-            </h3>
+            <h3>Premium Health <br/> Massage from <br/> professional Therapists</h3>
             <div className='left-text'>
                 <p>
                     We aim to connect you to the best top talented massage 
