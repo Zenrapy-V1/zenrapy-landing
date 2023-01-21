@@ -40,9 +40,7 @@
             font-size: 1.25rem;
             border: none;
         }
-
-       
-        
+   
     }
 }
 @media screen and (max-width: 1600px) {
@@ -92,9 +90,6 @@
                     border: none;
                     margin-top: 20px;
                 }
-    
-    
-    
             }
             img{
                 width: 450px;
@@ -113,17 +108,14 @@
             width: 547px;
             margin-top: -20px;
             
-            
-    
             .book {
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column-reverse;
-               
-                 margin-top: 6.25rem;
+                margin-top: 6.25rem;
                 width: 547px;
-                    // height: 436px;
+                //height: 436px;
                 background: rgba(179, 188, 241, 0.5);
                 padding: 20px;
                 display: flex;
@@ -166,8 +158,6 @@
                     margin-top: 10px;
                     border: none;
                 }
-    
-               
     
             }
 
