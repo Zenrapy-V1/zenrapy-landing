@@ -17,23 +17,29 @@ const Landing = () => {
 
     return (  
         <div className='landing'>
-            <NavBar />
+           <NavBar />
            <HeroSection />
-           <Launch modalShow={modalShow} setModalShow={setModalShow} errorModalShow={errorModalShow} setErrorModalShow={setErrorModalShow} />
+           <Launch 
+            modalShow={modalShow} 
+            setModalShow={setModalShow} 
+            errorModalShow={errorModalShow} 
+            setErrorModalShow={setErrorModalShow} />
            <Therapist />
-           <Subscribe modalShow={modalShow} setModalShow={setModalShow} errorModalShow={errorModalShow} setErrorModalShow={setErrorModalShow}/>
+           <Subscribe 
+            modalShow={modalShow} 
+            setModalShow={setModalShow} 
+            errorModalShow={errorModalShow} 
+            setErrorModalShow={setErrorModalShow}/>
            <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
               <Booking />
            </AnimationOnScroll>
            <Footer />
            <VerticallyCenteredModal
             show={modalShow}
-            onHide={() => setModalShow(false)}
-        />
-        <ErrorVerticallyCenteredModal 
-        show={errorModalShow}
-        onHide={() => setErrorModalShow(false)}
-        />
+            onHide={() => setModalShow(false)}/>
+           <ErrorVerticallyCenteredModal 
+            show={errorModalShow}
+            onHide={() => setErrorModalShow(false)}/>
         </div>
     );
 }
