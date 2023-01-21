@@ -43,7 +43,6 @@ const NavBar = () => {
                     
                 </div>
                 
-                
                 <div className="nav-icon" onClick={handleClick}>
                     {toggle ? <FaTimes /> : <AiOutlineMenu />}
                 </div>

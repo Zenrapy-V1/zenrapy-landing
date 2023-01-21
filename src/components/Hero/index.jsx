@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./index.scss"
-import { BsChevronDown } from 'react-icons/bs'
 import HeroImage from "../../assets/heroImage1.png"
 import HeroBg2 from "../../assets/heroBg2.png"
 import HeroBg4 from "../../assets/heroBg4.png"
@@ -48,9 +47,8 @@ const HeroSection = () => {
                 <img className='elipse' src={HeroBg2} alt="" />
                 <img className='sparkle' src={HeroBg4} alt="" />
             </div>
-           </AnimationOnScroll>
-            
-          </div>
+           </AnimationOnScroll>   
+        </div>
     );
 }
  
