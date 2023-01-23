@@ -2,6 +2,15 @@
   "name": "zenrapy",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "description": "At Home, Mobile massage near me! We are constantly training and onboarding, talented and skilled therapists everywhere around the world to help ease people’s pain and give them a feeling of real relaxation, whether you want a walk-in service or a home come to service we have therapists ready to attend to you.",
+  "keywords": [
+    "Health",
+    "Therapy",
+    "Massage Service",
+    "Well Being",
+    "Zenrapy"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.5.0",
     "@emotion/react": "^11.10.5",
