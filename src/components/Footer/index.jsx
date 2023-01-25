@@ -29,25 +29,25 @@ const Footer = () => {
                 <div className='right-section'>
                   <div className='socials'>
                     <a
-                      href="https://twitter.com/zummitafrica"
+                      href="https://www.linkedin.com/company/zenrapy/"
                       target="_blank"
                       rel="noopener noreferrer">
                       <img src={linkedinIcon} alt="linkedin logo" />
                     </a>
                     <a
-                      href="https://linkedin.com/company/zummit-africa/"
+                      href="https://www.facebook.com/zenrapy"
                       target="_blank"
                       rel="noopener noreferrer">
                       <img src={facebookIcon} alt="facebook logo" />
                     </a>
                     <a
-                      href="https://youtube.com/channel/UC64g6K2pxfFwbFufOCcTJfQ"
+                      href="https://www.instagram.com/invites/contact/?i=1gbvque4eyyjs&utm_content=ovrg5bf"
                       target="_blank"
                       rel="noopener noreferrer">
                       <img src={instagramIcon} alt="instagram logo" />
                     </a>
                     <a
-                      href="https://youtube.com/channel/UC64g6K2pxfFwbFufOCcTJfQ"
+                      href="https://twitter.com/zenrapy_?t=QZCU_jsTK97_FbcMV3lqcQ&s=09"
                       target="_blank"
                       rel="noopener noreferrer">
                       <img src={twitterIcon} alt="twitter logo" />
