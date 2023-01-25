@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./index.scss"
 import HeroImage from "../../assets/heroImage1.png"
 import HeroBg2 from "../../assets/heroBg2.png"
-import HeroBg4 from "../../assets/heroBg4.png"
+import HeroBg4 from "../../assets/herobg4.png"
 import MobileImage from "../../assets/heroImage2.png"
 import heroTick from "../../assets/hero-tick.png";
 import { AnimationOnScroll } from 'react-animation-on-scroll';

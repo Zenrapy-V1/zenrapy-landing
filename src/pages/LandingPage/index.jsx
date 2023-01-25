@@ -4,7 +4,7 @@ import NavBar from "../../components/Navbar/Navbar"
 import HeroSection from "../../components/Hero"
 import Launch from "../../components/Launch"
 import Therapist from "../../components/Therapist"
-import Subscribe from '../../components/Subscribe'
+import Customer from '../../components/Customers'
 import Booking from "../../components/BookSession"
 import Footer from '../../components/Footer'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -25,11 +25,7 @@ const Landing = () => {
             errorModalShow={errorModalShow} 
             setErrorModalShow={setErrorModalShow} />
            <Therapist />
-           <Subscribe 
-            modalShow={modalShow} 
-            setModalShow={setModalShow} 
-            errorModalShow={errorModalShow} 
-            setErrorModalShow={setErrorModalShow}/>
+           <Customer />
            <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
               <Booking />
            </AnimationOnScroll>
