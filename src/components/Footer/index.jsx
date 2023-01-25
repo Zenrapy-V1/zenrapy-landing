@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import "./index.scss"
-import { BsFacebook, BsInstagram, BsTwitter} from 'react-icons/bs'
+import linkedinIcon from "../../assets/linkedin.png"
+import facebookIcon from "../../assets/facebook.png"
+import instagramIcon from "../../assets/instagram.png"
+import twitterIcon from "../../assets/twitter.png"
+
 import Logo from "../../assets/logo2.png"
 
 
@@ -17,65 +21,38 @@ const Footer = () => {
                     </li>
                  </div>
                   <p>
-                        Zenrapy connects you to top talented massage 
-                        therapists anywhere around the world.
+                    Zenrapy connects you to top talented 
+                    masssage therapists.
                   </p>
-                  <div className='socials'>
-                    <BsFacebook />
-                    <BsInstagram />
-                    <BsTwitter />
-                  </div>
                 </div>
 
                 <div className='right-section'>
-                    <div className='product'>
-                        <h5>Our Product</h5>
-                        <ul>
-                            <li>
-                            Become a zenrapist
-                            </li>
-                            <li>
-                            Create an account
-                            </li>
-                            <li>
-                            Terms of service
-                            </li>
-                        </ul>
-                        
-                    </div>
-                    <div className='product help'>
-                    <h5>Help and Support</h5>
-                        <ul>
-                            <li>
-                              Help center 
-                            </li>
-                            <li>
-                              Contact
-                            </li>
-                            
-                        </ul>
-
-                    </div>
-                    <div className='about product'>
-                    <h5>About</h5>
-                        <ul>
-                            <li>
-                              About Zenrapy
-                            </li>
-                            <li>
-                              Career 
-                            </li>
-                            <li>
-                              FAQs
-                            </li>
-                            <li>
-                              Blog
-                            </li>
-                            <li>
-                                Security and privacy
-                            </li>                            
-                        </ul>
-                    </div>                    
+                  <div className='socials'>
+                    <a
+                      href="https://twitter.com/zummitafrica"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <img src={linkedinIcon} alt="linkedin logo" />
+                    </a>
+                    <a
+                      href="https://linkedin.com/company/zummit-africa/"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <img src={facebookIcon} alt="facebook logo" />
+                    </a>
+                    <a
+                      href="https://youtube.com/channel/UC64g6K2pxfFwbFufOCcTJfQ"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <img src={instagramIcon} alt="instagram logo" />
+                    </a>
+                    <a
+                      href="https://youtube.com/channel/UC64g6K2pxfFwbFufOCcTJfQ"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      <img src={twitterIcon} alt="twitter logo" />
+                    </a>
+                  </div>                  
                 </div>
 
 

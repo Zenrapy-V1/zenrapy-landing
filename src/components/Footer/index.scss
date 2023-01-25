@@ -8,7 +8,6 @@
         display: flex;
         justify-content: space-between; 
         align-items: center; 
-
         width: 1979px;
         height: 418px;    
         background: #FFFFFF;
@@ -28,71 +27,38 @@
                 
                 img {
                         // width: 240px;
-                        height: 100px;
+                        height: 113px;
                     }
             }
     
         }
         p{
             font-style: normal;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 18px;
             line-height: 30px;
-            width: 458px;
-            color: #4B4C59;
+            width: 358px;
+            margin-top: -1.2rem;
+            color: #000000;
         }
-
-        .socials{
-            display: flex;
-            margin-top: 20px;
-                        
-            svg{
-                font-size: 30px;
-                margin-right: 10px;                
-
-            }
-        }
-
        } 
+
        .right-section{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
       
 
-        .product{
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            margin-right: 70px;
-
-            h5{
-                font-weight: 600;
-                font-size: 1.3125rem;
-                line-height: 51px;                
-                color: #000000;
-                margin-left: 30px;
+        .socials{
+            img {
+                width: 40px;
+                height: 40px;
+                margin-left: 19px;
             }
-            ul{
-                list-style-type: none;
-                li{
-                    font-weight: 500;
-                    font-size: 18px;
-                    line-height: 36px;                    
-                    color: #4B4C59;
-                }
-            }
-        }
-        .help{
-            
-        }
-        
-        .about{
-            
+           
         }
        }
     }
-
 }
 
 
@@ -132,7 +98,6 @@
                                 height: 85px;
                             }
                         }
-    
                     }
     
                     p {
@@ -144,21 +109,6 @@
                         color: #4B4C59;
                         text-align: center;
                     }
-    
-                    .socials {
-                        display: flex;
-                        margin-top: 10px;
-                        margin-bottom: 50px;
-                        align-items: center;
-                        justify-content: center;
-    
-                        svg {
-                            font-size: 30px;
-                            margin-right: 10px;
-    
-                        }
-                    }
-    
                 }
     
                 .right-section {
@@ -166,53 +116,21 @@
                     justify-content: start;
                     align-items: center;
                     text-align: center;
-    
-    
-                    .product {
-                        display: grid;
-                        justify-content: center;
+                    .socials{
+                        display: flex;
                         align-items: center;
-                        margin-right: 0px;
-                        
-    
-                        h5 {
-                            font-weight: 600;
-                            font-size: 21px;
-                            line-height: 36px;
-                            color: #000000;
-                            margin-left: 50px;
+                        padding: 50px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            margin-left: 19px;
                         }
-    
-                        ul {
-                            list-style-type: none;
-                            margin-bottom: 30px;
-                            margin-left: 30px;
-    
-                            li {
-                                font-weight: 500;
-                                font-size: 20px;
-                                line-height: 36px;
-                                color: #4B4C59;
-                            }
-                        }
+                       
                     }
-    
-                    .help{
-           
-                    h5 {
-                            font-weight: 600;
-                            font-size: 1.3125rem;
-                            line-height: 51px;
-                            color: #000000;
-                            margin-left: 60px !important;
-                     }
-            
-        }
-    
-                    .about {}
                 }
-            }
-    
+            } 
         }
 
 }
+
