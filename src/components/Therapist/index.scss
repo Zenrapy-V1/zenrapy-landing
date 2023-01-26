@@ -1,130 +1,185 @@
-.therapist{
-    margin-top: 100px;
-    margin-bottom: 30px;
-    display: grid;
-    justify-content: center;
-
-    h3{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.125rem;
-        line-height: 75px;            
-        color: #000000;
-        text-align: center;
-    }
-    p{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 48px;
-        text-align: center;
-        color: #4B4C59;
-        width: 1553px;
-        margin-top: 20px;
-        
-    }
-
-    .therapist-image{
-        display: flex;
-        justify-content: space-around;
-        margin-top: 50px;
-        padding: 20px;
-        img {
-                margin-right: 15px;
-            }
-    }
+.getting-started{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 72px; 
+    color: #000000;
+    text-align: center;
+    margin: 50px 0;
 }
 
- @media screen and (max-width: 1600px) {
-.therapist {
-        margin-top: 100px;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.gpt3__possibility {
+    margin: 0 175px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-        h3 {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 3.125rem;
-            line-height: 75px;
-            color: #000000;
-            text-align: center;
-        }
-
-        p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 48px;
-            text-align: center;
-            color: #4B4C59;
-            width: 953px;
-            margin-top: 20px;
-            text-align: center;
-
-        }
-
-        .therapist-image {
+        .gpt3__possibility-image {
+            flex: 1;
             display: flex;
-            justify-content: space-around;
-            margin-top: 50px;
-            padding: 20px !important;
-            img{
-                margin-right: 15px;
-                width: 400px;
+            justify-content: flex-start;
+            align-items: center;
+        
+            margin-right: 2rem;
+        }
+        
+        .gpt3__possibility-image1 img {
+            width: 90px;
+            height: 90px;
+        }
+        .gpt3__possibility-image img {
+            width: 344px;
+            height: 438px;
+        }
+        
+        .gpt3__possibility-content {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            //width: 820px;
+            //padding-right: 273px;
+            //margin-right: 20rem;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 5rem;
+        }
+        
+        .gpt3__possibility-content2 {
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+            //width: 820px;
+            //padding-right: 273px;
+            //margin-right: 20rem;
+            align-items: flex-end;
+            flex-direction: column;
+            margin-top: 5rem;
+        }
+        
+        .gpt3__possibility-content h4 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            color: #71E5FF;
+        }
+        
+        .gpt3__possibility-content h4:last-child {
+            color: #ff8A71;
+        }
+        
+        .gpt3__possibility-content  h1 {
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 45px;
+            margin: 1rem 0;
+            color: #606161;
+        }
+        
+        .gpt3__possibility-content p {
+            margin-bottom: 2rem;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 34px;
+            width: 620px;
+            color: #606161;
+        
+        }
+        .gpt3__possibility-content2  h1 {
+            font-weight: 800;
+            font-size: 34px;
+            line-height: 45px;
+            margin: 1rem 0;
+            color: #606161;
+        }
+        
+        .gpt3__possibility-content2 p {
+            margin-bottom: 2rem;
+            text-align: right;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 34px;
+            width: 620px;
+            color: #606161;
+        
+        }
+    }
+
+
+@media screen and (max-width: 950px) {
+    .getting-started {
+       font-size: 25px;
+    }
+
+    .gpt3__possibility {
+        flex-direction: column;
+        margin: 0 30px;
+
+            .gpt3__possibility-image {
+                margin: 1rem 0;
+            }
+        
+            .gpt3__possibility-image img {
+                width: unset;
+                height: unset;
+            }
+        
+            .gpt3__possibility-content {
+                margin-top: 2rem;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 1rem;
+        
+            }
+            .gpt3__possibility-content2 {
+                margin-top: 2rem;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+        
+            .gpt3__possibility-content h1 {
+                font-size: 25px;
+            }
+            .gpt3__possibility-content2 h1 {
+                font-size: 25px;
+            }
+        
+            .gpt3__possibility-content p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .gpt3__possibility-content2 p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .reverse-illustration{
+                flex-direction: column-reverse;
             }
         }
     }
- }
 
-@media screen and (max-width: 960px) {
-    .therapist {
-        margin-top: 70px;
-        display: flex;
-        flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        h3 {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 22px;
-                line-height: 25px;
-                color: #000000;
-                text-align: center;
-                width: 80vw;
-                 margin-left: 0px;
-            }
-        
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 18px;
-                text-align: center;
-                color: #4B4C59;
-                width: 80vw;
-                margin-top: 20px;
-                margin-left: 0px;
-        
-            }
-            .therapist-image{
-                flex-direction: column;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 0px;
-                margin-top: 0px;
-                width: 423px;
-                margin-left: 0px;
-                img{
-                    width: 80vw;
-                    height: 289px;
-                    margin-top: 30px;
-                    
-                }
-            }
+
+@media screen and (max-width: 700px) {
+    .gpt3__possibility-image img {
+        width: 100%;
+        height: 100%;
     }
+    .gpt3__possibility-content p {
+          width: inherit;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 1rem;
 
+      }
+    .gpt3__possibility-content2 p {
+          width: inherit;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 1rem;
+
+      }
+      .reverse-illustration{
+        flex-direction: column-reverse;
+      }
 }
+
+

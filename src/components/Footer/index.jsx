@@ -12,6 +12,7 @@ const Footer = () => {
 
     return (  
         <section className='footer-section'>
+            {/* <hr  className='horizontal-line'/> */}
             <div className='footer'>
               <div className='left-section'>
                 <div className='logo'>
