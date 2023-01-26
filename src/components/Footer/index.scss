@@ -2,7 +2,10 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
-
+    .horizontal-line{
+        margin-top: 4rem;
+        border: 1px solid #7D7D7D;
+    }
     .footer{
         padding: 80px;
         display: flex;
