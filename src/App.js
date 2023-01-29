@@ -8,6 +8,7 @@ import {
   Link,
 } from "react-router-dom";
 import About from './pages/About';
+import Blog from './pages/Blog';
 import Contact from './pages/ContactUs';
 import JoinUs from './pages/JoinUs/JoinUs';
 
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/join-us" element={<JoinUs />} />
           </Routes>

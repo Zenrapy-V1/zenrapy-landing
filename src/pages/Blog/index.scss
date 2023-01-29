@@ -1,0 +1,102 @@
+.blog-page{
+    padding: 0 5rem 0 5rem;
+
+.top-section{
+    .heading{
+        text-align: left;
+        .bold-heading-dark{
+            font-weight: 600;
+            font-style: italic;
+            font-size: 2.5rem;
+            line-height: 10px;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(11, 140, 132, 0.3);
+        }
+        .bold-heading-light{
+            font-weight: 200;
+            font-style: italic;
+            font-size: 2.5rem;
+            line-height: 10px;
+            color: #7D7D7D;
+            text-shadow: 0px 4px 4px rgba(11, 140, 132, 0.3);
+        }
+    }
+}
+
+.bottom-section{
+    margin-top: 8rem;
+    // display: flex;
+    h2{
+        font-size: 2rem;
+        color: #020516;
+        font-weight: 600;
+        text-align: center;
+    }
+    .mission{
+        // padding: 5rem;
+        display: flex;
+        img {
+                width: 100vw;
+                height: 400px;
+                // display: none;
+        
+            }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.472rem;
+            // padding: 6rem;
+            text-justify: distribute; 
+            line-height: 53px;
+
+        }
+    }
+}
+   
+}
+
+
+@media screen and (max-width: 960px) {
+        .blog-page {
+            // display: flex;
+    
+            .bottom-section {
+                margin-top: 4rem;
+                text-align: center;
+    
+                // display: flex;
+                h2 {
+                    font-size: 1.5rem;
+                    color: #020516;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+    
+                .mission {
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    width: 100vw;
+                    text-align: center;
+                    img {
+                            width: 100vw;
+                            height: 300px;
+                            display: none;
+                    
+                        }
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 1rem;
+                        padding: 20px;
+                        text-justify: distribute;
+                        // text-align: center;
+                    }
+                }
+            }
+    
+        }
+}
