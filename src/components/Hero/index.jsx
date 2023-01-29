@@ -39,6 +39,7 @@ const HeroSection = () => {
                <a target='_blank' href={'https://wa.me/message/YNQGXF43I7LEA1'}>
                     <button  className='hero-button'>Book a session</button>
                 </a>
+
            </div>
             <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
               <div className='right'>
