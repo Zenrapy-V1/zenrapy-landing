@@ -3,7 +3,8 @@ import "./index.scss"
 import { BsChevronDown } from 'react-icons/bs'
 import Customer1 from "../../assets/customer1.png"
 import Customer2 from "../../assets/customer2.png"
-import Customer3 from "../../assets/customer3.png"
+//import Customer3 from "../../assets/customer3.png"
+import Customer4 from "../../assets/customer4.png"
 
 const Customer = () => {
 
@@ -30,7 +31,7 @@ const Customer = () => {
                     <p className='customer-comment-sub'>Ige C ~ Abuja Nigeria</p>
                 </div>
                 <div className='block'>
-                    <img src={Customer3} alt="" />  
+                    <img src={Customer4} alt="" />  
                     <p className='customer-comment'>
                         “Very professional and skilled therapists,
                         will book again” 
