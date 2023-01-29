@@ -26,7 +26,6 @@ const AboutPage = () => {
 
     return (  
         <div className='about-page'>
-            
            <div className='about-section'>
                 <h2>Types of massage services zenrapy<br/> offers</h2>
                 <div className='sub-paragraph'>
@@ -38,14 +37,6 @@ const AboutPage = () => {
                 <div className='about'>
                     <img src={AboutUsImage1} />
                 </div>
-
-                {/* <div class="container">
-                  <div class="card-wrapper">
-                    <div class="card-img">
-                      <img src={AboutUsImage} alt="possibility"/>
-                    </div>
-                  </div>
-                </div> */}
            </div>
            
            <div className="about-paragraphs">
