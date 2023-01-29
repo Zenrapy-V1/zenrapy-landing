@@ -11,14 +11,14 @@ const BlogPage = () => {
             <div className='top-section'>
                 <p className='heading'>
                     <span className='bold-heading-dark'>Hello 👋, We are <br/>
-                    Zenrapy Blog.</span><span className='bold-heading-light'> see our<br/> 
+                    Zenrapy Blog.</span><span className='bold-heading-light'> see our <br/> 
                     thoughts, stories and ideas</span> 
                 </p>
            </div>
            
            <div className='bottom-section'>
                 <h2>Page Under Construction</h2>
-                <div className='mission'>
+                <div className='context'>
                     <p>
                         Hello, the page you are tying to view is under 
                         construction and temporarily unavailable.
