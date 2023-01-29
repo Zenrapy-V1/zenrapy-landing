@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./index.scss"
 import feelBetterSquare2 from "../../assets/feelBetterSquare2.png"
 
-const gettingStarted = () => {
+const feelingBetter = () => {
 
     return (  
         <div>
@@ -40,4 +40,4 @@ const gettingStarted = () => {
     );
 }
  
-export default gettingStarted;
+export default feelingBetter;

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./index.scss"
 import NavBar from "../../components/Navbar/Navbar"
 import HeroSection from "../../components/Hero"
-import Launch from "../../components/Launch"
+import FeelingBetter from "../../components/FeelingBetter"
 import GettingStarted from "../../components/GettingStarted"
 import Customer from '../../components/Customers'
 import Booking from "../../components/BookSession"
@@ -19,7 +19,7 @@ const Landing = () => {
         <div className='landing'>
            <NavBar />
            <HeroSection />
-           <Launch 
+           <FeelingBetter
             modalShow={modalShow} 
             setModalShow={setModalShow} 
             errorModalShow={errorModalShow} 
