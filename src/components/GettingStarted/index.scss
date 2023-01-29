@@ -134,6 +134,8 @@
                 align-items: center;
                 text-align: center;
                 margin-bottom: 1rem;
+                font-size: 16px;
+                line-height: 24px;
             }
         
             .gpt3__possibility-content h1 {
@@ -146,13 +148,17 @@
             .gpt3__possibility-content p {
                 font-size: 16px;
                 line-height: 24px;
-            }
-            .gpt3__possibility-content2 p {
-                font-size: 16px;
-                line-height: 24px;
+                
             }
             .reverse-illustration{
                 flex-direction: column-reverse;
+            }
+            .gpt3__possibility-content2 p {
+                width: inherit;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 1rem;
+      
             }
         }
     }
