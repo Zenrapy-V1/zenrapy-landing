@@ -36,9 +36,9 @@ const HeroSection = () => {
                         </li>                          
                     </ul>
                 </div>
-               <a target='_blank' href={'https://wa.me/message/YNQGXF43I7LEA1'}>
-                    <button  className='hero-button'>Book a session</button>
-                </a>
+              <button className='hero-button' onClick={(e) => {e.preventDefault(); window.location.replace('/#launch');}}>
+                    Book a session
+                </button>
            </div>
             <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
               <div className='right'>
