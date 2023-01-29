@@ -19,11 +19,7 @@ const Landing = () => {
         <div className='landing'>
            <NavBar />
            <HeroSection />
-           <FeelingBetter
-            modalShow={modalShow} 
-            setModalShow={setModalShow} 
-            errorModalShow={errorModalShow} 
-            setErrorModalShow={setErrorModalShow} />
+           <FeelingBetter />
            <GettingStarted />
            <Customer />
            <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">

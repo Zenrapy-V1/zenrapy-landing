@@ -1,161 +1,127 @@
-.about{
-    
-}
-
-
 .about-page{
-    // display: flex;
-
-    .about-top{
-        display: flex;
-        justify-content: space-around;
-        .right-img{
-            img{
-                width: 45vw;
-                // height: 400px;
-                // display: none;
-
-            }
-        }
-        
-        .right-about{
-            // display: grid;
-            // justify-content: center;
-            // align-items: center;
-            padding: 3rem;
-            background-color: #020516;
-            
+    padding: 0 5rem 0 5rem;
+    position: relative;
+    overflow-x: hidden;
     
-            h3{
-                color: #fff;
-            font-weight: 500;
-            font-size: 1.88rem;
-            width: 40vw;
-            }
-
-            p{
-                margin-top: 2rem;
-                color: #fff;
-                font-size: 1.272rem;
-            }
-        }
-    
-    }
-.mission-section{
+.about-section{
     margin-top: 3rem;
+    padding: 0 5rem 0 5rem;
     // display: flex;
     h2{
         font-size: 2.5rem;
         color: #020516;
         font-weight: 600;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .mission{
-        padding: 5rem;
+    .sub-paragraph{
+        display: flex;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.373rem;
+        line-height: 30px;
+        color: #7D7D7D;
+    }
+    .about{
         display: flex;
         img {
-                width: 100vw;
-                height: 400px;
-                // display: none;
-        
+                height: 313px;
+                width: 79vw;
+                margin-top: 38px;
             }
-        p{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.472rem;
-            padding: 6rem;
-           text-justify: distribute; 
-        }
+    }
+}
+
+.about-paragraphs{
+    margin-top: 3rem;
+
+    // display: flex;
+    .description{
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 72px;
+        color: #000000;
+
+    }
+    .sub-paragraph{
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 25px;
+        color: #000000;
+        margin-left: 1.4rem;
     }
 }
    
 }
 
 
-@media screen and (max-width: 960px) {
-    .about {}
-        
-        .about-page {
+@media screen and (max-width: 960px) {       
+    .about-page {
+        padding: 0 1.5rem 0 1.5rem;
+        // display: flex;
+
+        .about-section {
+            margin-top: 4rem;
+            text-align: center;
+            padding: 0;
+
             // display: flex;
-    
-            .about-top {
-                display: flex;
-                justify-content: space-around;
-                flex-direction: column;
-    
-                .right-img {
-                    img {
-                        width: 100vw;
-                        height: 300px;
-                        display: none;
-    
-                    }
-                }
-    
-                .right-about {
-                    // display: grid;
-                    // justify-content: center;
-                    // align-items: center;
-                    padding: 1.5rem;
-                    background-color: #020516;
-                    text-align: center;
-                    width: 100vw;
-    
-                    h3 {
-                        color: #fff;
-                        font-weight: 600;
-                        font-size: 1.28rem;
-                        width: 90vw;
-                        
-                    }
-    
-                    p {
-                        margin-top: 2rem;
-                        color: #fff;
-                        font-size: 1rem;
-                        
-                    }
-                }
-    
-            }
-    
-            .mission-section {
-                margin-top: 4rem;
+            h2 {
+                font-size: 1.6rem;
+                color: #020516;
+                font-weight: 600;
                 text-align: center;
-    
-                // display: flex;
-                h2 {
-                    font-size: 1.5rem;
-                    color: #020516;
-                    font-weight: 600;
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
-    
-                .mission {
-                    padding: 0px;
-                    display: flex;
-                    flex-direction: column-reverse;
-                    width: 100vw;
-                    text-align: center;
-                    img {
-                            width: 100vw;
-                            height: 300px;
-                            display: none;
-                    
-                        }
-                    p {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 1rem;
-                        padding: 20px;
-                        text-justify: distribute;
-                        // text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .sub-paragraph{
+                font-size: 1.15rem;
+                line-height: 25px;
+            }
+
+            .about {
+                padding: 0px;
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100vw;
+                text-align: center;
+                img {
+                        height: 96px;
+                        width: 90vw;
+                        margin-top: 38px;
+                        background: url("../../assets/aboutUsImage2.png");
+                        // display: none;
                     }
+                p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1rem;
+                    padding: 20px;
+                    text-justify: distribute;
+                    // text-align: center;
                 }
             }
-    
         }
+
+    }
+
+    .about-paragraphs{
+        margin-top: 3rem;
+    
+        // display: flex;
+        .description:first-child{
+            line-height: 39px;
+            font-size: 1.2rem;
+        }
+        .sub-paragraph{
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 25px;
+            color: #000000;
+            margin-left: 1.4rem;
+        }
+    }
 }
