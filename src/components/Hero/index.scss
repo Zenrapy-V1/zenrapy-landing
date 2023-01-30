@@ -3,7 +3,9 @@
     justify-content: space-between;
     margin-top: 30px;
     flex-direction: row;
-    overflow: hidden;
+
+    position: relative;
+    overflow-x: hidden;
   
     .left{
         width: 823px;
@@ -42,12 +44,20 @@
             }
         }
 
-        .hero-button{
+        .home-hero-button{
+            width: 490px;
+            height: 80px;
+            background: #5441F3;
+            border-radius: 9.00091e+17px;
+            color: #eee;
+            font-size: 20px;
+            border: none;
+            margin-top: 3.125rem;
+
             position: absolute;
             background: #5441F3;
             font-size: 20px;
             font-weight: 400;
-            width: 475px;
             height: 50px;
             background: #5441F3;
             border-radius: 8px;
@@ -55,28 +65,11 @@
     }
         
     .right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url("../../assets/heroImage.png");
-        background-position: right bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 830px;
-        height: 829px;
-        margin-top: 2rem;
-        margin-left: 0px;
-        // margin-left: 0px;
-        // position: absolute;
-        // width: 830px;
-        // height: 729px;
-        // left: 1356px;
-        // top: 395px;
+        margin-top: 7rem;
         
         .main-image{
-            width: 552px;
-            height: 562px;
-            margin-right: 140px;
+            width: 452px;
+            height: 462px;
         }
 
         .mobile-img{
@@ -85,28 +78,25 @@
 
         .elipse{
             position: absolute;
-            margin-top: 41rem;
+            margin-top: 38rem;
             margin-right: 25rem;
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
         }
 
         .sparkle{
             position: absolute;
-            margin-top: -38rem;
-            margin-right: 40rem;
-            width: 157px;
-            height: 157px;
+            margin-top: -29rem;
+            margin-left: -9rem;
+            width: 120px;
+            height: 120px;
         }
     }
 }
 
  @media screen and (max-width: 1600px) {
 .hero {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 30px;
-        flex-direction: row;
+       
 
             .left {
                 width: 623px ;
@@ -130,8 +120,8 @@
                     line-height: 45px;
                 }
 
-                .hero-button {
-                    width: 365px;
+                .home-hero-button{
+                    width: 490px;
                     height: 80px;
                     background: #5441F3;
                     border-radius: 9.00091e+17px;
@@ -151,9 +141,9 @@
 
             .right {
                 .main-image {
-                    width: 488px;
+                    width: 452px;
                     height: 462px;
-                    margin-right: 140px;
+                    margin-right: 40px;
                 }
             }
        
@@ -165,47 +155,51 @@
 @media screen and (max-width: 960px) {
     .hero {
             flex-direction: column;
-            width: 100vw;
+            padding: 0 1rem 0 1rem;
+            background-repeat: no-repeat;
+            // width: 100vw;
     .left {
         // width: 703px;
-        margin: 20px 20px;
+        // margin: 20px 20px;
+       margin: 0 1rem 0 1rem;
+        
+
         .left-text{
-            margin-top: -50px;
+            justify-content: space-around;
+
+            margin-top: 4rem;
+            text-align: center;
+            padding: 0;
+            display: none;
             ul {
                 .hero-list {
-                    font-style: normal;
                     font-weight: 400;
                     font-size: 15px;
                     line-height: 22px;
-                    text-align: left;
+                    text-align: center;
+                    margin: 0 1rem 0 1rem;
+
+                }
+                br {
+                    display: none;
                 }
             }
         }
         h3 {
-            width: 313px;
+            // width: 313px;
             // height: 85px;
             font-weight: 600;
             font-size: 24px;
-            line-height: 48px;
+            line-height: 68px;
+            margin-bottom: 3rem;
             text-align: left;
         }
 
-        p {
-            margin-top: 20px;
-            margin-bottom: 55px;
-            width: 315px;
-            // height: 61px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 41px;
-            text-align: center;
-        }
-
-        button {
-            width: 365px;
+        .home-hero-button {
+            width: 330px;
             height: 53px;
             background: #5441F3;
-            border-radius: 9.00091e+17px;
+            border-radius: 8px;
             color: #eee;
             font-size: 18px;
             border: none;
@@ -215,33 +209,38 @@
     }
 
         .right {
-            margin-top: 60px;            
-            background-image: url("../../assets/mobileHeroBg.png");
-            background-position: right bottom;
-            background-repeat: no-repeat;
-            background-size: contain;
-            width: 380px;
-            height: 389px;
+            // margin-top: 60px;            
+            // background-image: url("../../assets/mobileHeroBg.png");
+            // background-position: right bottom;
+            // background-repeat: no-repeat;
+            // background-size: contain;
+            // width: 380px;
+            // height: 389px;
     
             // margin-left: 0px;
-            .main-image {
-                width: 352px;
-                height: 362px;
-                margin-right: 140px;
-            }
+            // .main-image {
+            //     width: 352px;
+            //     height: 362px;
+            //     margin-right: 140px;
+            // }
 
             .main-image{
                 width: 230px;
-                    height: 329px;
-                    display: none;
-                }
+                height: 329px;
+                display: none;
+               }
             .mobile-img {
                 display: block;
                 width: 322px;
-                    height: 302px;
-                margin-top: 50px;
+                height: 312px;
+                //margin-top: 150px;
+                margin: 10rem 1rem 0 1rem;
+
+                // width: 337.74px;
+                // height: 296.92px;
+
             }
-            .elipse {
+            .ellipse {
                 display: none;
                 position: absolute;
                 margin-top: 41rem;
