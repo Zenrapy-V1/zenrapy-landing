@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
 import "./index.scss"
 import HeroImage from "../../assets/heroImage1.png"
+import MobileImage from "../../assets/heroImage2.png"
+import mainHome from "../../assets/mainHome.png"
+import mainHomeMobile from "../../assets/mainHomeMobile.png"
 import HeroBg2 from "../../assets/heroBg2.png"
 import HeroBg4 from "../../assets/heroBg4.png"
-import MobileImage from "../../assets/heroImage2.png"
 import heroTick from "../../assets/hero-tick.png";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
-
-
 const HeroSection = () => {
-
     return (  
         <div className='hero'>
            <div className='left'>
@@ -36,18 +35,18 @@ const HeroSection = () => {
                         </li>                          
                     </ul>
                 </div>
-               <a target='_blank' href={'https://wa.me/message/YNQGXF43I7LEA1'}>
-                    <button  className='hero-button'>Book a session</button>
+                <a target='_blank' href={'https://wa.me/message/YNQGXF43I7LEA1'}>
+                    <button  className='home-hero-button'>Book a session</button>
                 </a>
-
            </div>
             <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
-              <div className='right'>
-                <img className='main-image' src={HeroImage} alt="" /> 
-                <img className="mobile-img" src={MobileImage} />
-                <img className='elipse' src={HeroBg2} alt="" />
-                <img className='sparkle' src={HeroBg4} alt="" />
-            </div>
+                <div className='right'>
+                    {/* <img className='main-image' src={HeroImage} alt="" />  */}
+                    <img className='main-image' src={mainHome} alt="" /> 
+                    <img className="mobile-img" src={mainHomeMobile} />
+                    <img className='ellipse' src={HeroBg2} alt="" />
+                    <img className='sparkle' src={HeroBg4} alt="" />
+                </div>
            </AnimationOnScroll>   
         </div>
     );

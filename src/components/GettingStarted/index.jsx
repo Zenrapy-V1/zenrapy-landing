@@ -10,7 +10,7 @@ import gettingStartedIllustration6 from "../../assets/gettingStartedIllustration
 const gettingStarted = () => {
 
     return (  
-        <div>
+        <div className='wrapper'>
             <p className='getting-started'>How to get started?</p>
             {/* Illustration1 */}
             <div className="gpt3__possibility  section__padding" id="possibility">
@@ -27,17 +27,17 @@ const gettingStarted = () => {
                     </p>
                 </div>
                 <div className="gpt3__possibility-image">
-                    <img src={gettingStartedIllustration2} alt="possibility"/>
+                    <img className='main-illustration' src={gettingStartedIllustration2} alt="possibility"/>
                 </div>
             </div>
             {/* Illustration2 */}
             <div className="gpt3__possibility reverse-illustration section__padding" id="possibility">
                 <div className="gpt3__possibility-image">
-                    <img src={gettingStartedIllustration3} alt="possibility"/>
+                    <img className='main-illustration' src={gettingStartedIllustration3} alt="possibility"/>
                 </div>
                 <div className="gpt3__possibility-content2">
                     <div className="gpt3__possibility-image1">
-                        <img src={gettingStartedIllustration4} alt="possibility"/>
+                        <img  src={gettingStartedIllustration4} alt="possibility"/>
                     </div>
                     <h1 className="gradient__text">
                         We come to you
@@ -63,7 +63,7 @@ const gettingStarted = () => {
                     </p>
                 </div>
                 <div className="gpt3__possibility-image">
-                    <img src={gettingStartedIllustration6} alt="possibility"/>
+                    <img className='main-illustration' src={gettingStartedIllustration6} alt="possibility"/>
                 </div>
             </div>
         </div>
