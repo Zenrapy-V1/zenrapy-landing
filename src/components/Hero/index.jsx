@@ -7,6 +7,7 @@ import mainHomeMobile from "../../assets/mainHomeMobile.png";
 import HeroBg2 from "../../assets/heroBg2.png";
 import HeroBg4 from "../../assets/heroBg4.png";
 import heroTick from "../../assets/hero-tick.png";
+import BookingBtn from "../BookingBtn";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const HeroSection = () => {
@@ -39,17 +40,9 @@ const HeroSection = () => {
                 </li>
               </ul>
             </div>
-            <div className="book-btn">
-                <button className="home-hero-button">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={"https://wa.me/message/YNQGXF43I7LEA1"}
-                >
-                  Book a session
-                </a>
-                </button>
-            </div>
+
+            <BookingBtn />
+
           </div>
           <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
             <div className="right">
