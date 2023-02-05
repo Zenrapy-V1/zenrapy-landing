@@ -1,8 +1,11 @@
 .hero {
+  background: #F8F8F8;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
+  // margin-top: 3rem;
+  padding-bottom: 7rem !important;
+  padding-top: 3rem !important;
   flex-direction: row;
   position: relative;
   overflow-x: hidden;
