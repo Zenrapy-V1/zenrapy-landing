@@ -52,7 +52,24 @@
     }
 }
 
-
+@media screen and (max-width: 1024px) {
+    .top-section {
+        width: unset !important;
+    }
+    .heading-dark {
+        font-size: 2rem !important;
+    }
+    .heading-light {
+        font-size: 2rem !important;
+    }
+    .context {
+        p {
+            img {
+                height: 50px;
+            }
+        }
+    }
+}
 
 
 

@@ -3,6 +3,7 @@ import "./index.scss";
 import { BsChevronDown } from "react-icons/bs";
 import About from "../../assets/about.png";
 import wavingHand from "../../assets/wavingHand.svg";
+import Smiley from "../../assets/smiley.svg";
 import BlogAwait from "../../assets/blogAwait.png";
 
 const BlogPage = () => {
@@ -11,7 +12,7 @@ const BlogPage = () => {
       <div className="top-section">
         <h1>
           <span className="heading-dark">
-            Hello <img src={wavingHand} alt="" />, We are Zenrapy Blog.
+            Hello <img src={wavingHand} alt="wavinghand" />, We are Zenrapy Blog.
           </span>
           <span className="heading-light">
             {" "}
@@ -27,7 +28,7 @@ const BlogPage = () => {
             <p>
               Hello, the page you are tying to view is under construction and
               temporarily unavailable. The team is doing some work behind the
-              scenes, do check back later.😊 <br /> Thank you
+              scenes, do check back later. <img src={Smiley} alt="smiley" /> <br /> Thank you
             </p>
           </div>
           <div className="context-image-container">
