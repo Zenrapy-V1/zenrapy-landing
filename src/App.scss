@@ -1,17 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-// * {
-//   text-decoration: none !important;
-// }
-
 body {
-  font-family: 'Poppins';  
+  font-family: "Poppins";
   font-style: normal;
   position: relative;
   overflow-x: hidden;
   width: 100vw;
-  // font-size: 0.625rem;
-  // background: pink;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 // main {

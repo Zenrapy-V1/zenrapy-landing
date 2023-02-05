@@ -11,58 +11,58 @@ const gettingStarted = () => {
 
     return (  
         <div className='wrapper'>
-            <p className='getting-started'>How to get started?</p>
+            <h2>How to get started?</h2>
             {/* Illustration1 */}
-            <div className="gpt3__possibility  section__padding" id="possibility">
-                <div className="gpt3__possibility-content">
+            <div className="illustration-container container1 illustration1">
+                <div className="illustration-content">
                     <div className="gpt3__possibility-image1">
                         <img src={gettingStartedIllustration1} alt="possibility"/>
                     </div>
-                    <h1 className="gradient__text">
+                    <h4 className="gradient-text">
                         Book a session
-                    </h1>
+                    </h4>
                     <p>
                         Book a massage session in seconds,<br/> 
                         schedule a massage anytime from anywhere
                     </p>
                 </div>
-                <div className="gpt3__possibility-image">
+                <div className="illustration-container-image">
                     <img className='main-illustration' src={gettingStartedIllustration2} alt="possibility"/>
                 </div>
             </div>
             {/* Illustration2 */}
-            <div className="gpt3__possibility reverse-illustration section__padding" id="possibility">
-                <div className="gpt3__possibility-image">
+            <div className="illustration-container">
+                <div className="illustration-container-image">
                     <img className='main-illustration' src={gettingStartedIllustration3} alt="possibility"/>
                 </div>
-                <div className="gpt3__possibility-content2">
+                <div className="illustration-content content2">
                     <div className="gpt3__possibility-image1">
                         <img  src={gettingStartedIllustration4} alt="possibility"/>
                     </div>
-                    <h1 className="gradient__text">
+                    <h4 className="gradient-text">
                         We come to you
-                    </h1>
+                    </h4>
                     <p>
                         You book a preferred massage therapist<br/>
-                        of your choice closest to you and we come to you.
+                        of your choice closest to you and we come to you
                     </p>
                 </div>
             </div>
             {/* Illustration3 */}
-            <div className="gpt3__possibility section__padding" id="possibility">
-                <div className="gpt3__possibility-content">
+            <div className="illustration-container container1">
+                <div className="illustration-content">
                     <div className="gpt3__possibility-image1">
                         <img src={gettingStartedIllustration5} alt="possibility"/>
                     </div>
-                    <h1 className="gradient__text">
+                    <h4 className="gradient-text">
                         Chill and relax
-                    </h1>
+                    </h4>
                     <p>
                         Now relax and let the therapist work their<br/>  
-                        magic to heal your body,
+                        magic to heal your body
                     </p>
                 </div>
-                <div className="gpt3__possibility-image">
+                <div className="illustration-container-image">
                     <img className='main-illustration' src={gettingStartedIllustration6} alt="possibility"/>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import BookingBtn from "../BookingBtn";
 const feelingBetter = () => {
   return (
     <div className="feelingbetter">
-      <p className="heading">Want to feel Better Instantly?</p>
+      <h2>Want to feel Better Instantly?</h2>
       <div className="feel-better" id="possibility">
         <div class="card-wrapper-container">
           <div class="card-wrapper">
