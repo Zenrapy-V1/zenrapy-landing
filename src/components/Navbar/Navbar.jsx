@@ -1,95 +1,66 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import Logo from "../../assets/logo1.png";
 import "./index.scss";
-import { BsChevronDown } from "react-icons/bs";
-import { AiOutlineMenu } from "react-icons/ai";
-import { FaTimes } from "react-icons/fa";
-import Logo from "../../assets/logo2.png";
-import { Link } from "react-router-dom";
 
-const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Blog", href: "/blog" },
-  { name: "About Us", href: "/about" },
-];
+function Navbar() {
+  const [isOpen, setOpen] = useState(false);
+  const location = useLocation();
 
-const NavBar = () => {
-  const [toggle, setToggle] = useState(false);
-const [activePage, setActivePage] = useState("/")
-  // const [navbar, setNavbar] = useState(false);
-
-  const handleClick = () => {
-    setToggle(!toggle);
-  };
-
-  const manageClick = (href) => {
-    setActivePage(href);
+  const toggleMenu = () => {
+    setOpen(!isOpen);
   };
 
   return (
-    <div className="nav-container">
+    <nav>
       <div className="navbar">
-        <div className="logo">
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <li>
-              <img src={Logo} alt="" />
-            </li>
+        <div className="logo-container">
+          <Link to="/">
+            <img src={Logo} alt="" />
           </Link>
         </div>
-        
-        <div className={toggle ? "nav-menu active" : "nav-menu"}>
-          <div className="links">
-            
-              {navigation.map((item) => (
-                <NavLink
-                  key={item.name}
-                  to={item.href}
-                  onClick={() => manageClick(item.href)}
-                  className={item.href === activePage ? "nav-link active" : "nav-link"}
-                >
-                  {item.name}
-                </NavLink>
-              ))}
+        <div className={`menu ${isOpen ? "show" : ""}`}>
+          <div>
+            <Link
+              to="/"
+              className={`link ${location.pathname === "/" ? "active" : ""}`}
+            >
+              Home
+            </Link>
           </div>
-          
-          <li className="join nav-item">
+          <div>
+            <Link
+              to="/blog"
+              className={`link ${
+                location.pathname === "/blog" ? "active" : ""
+              }`}
+            >
+              Blog
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/about"
+              className={`link ${
+                location.pathname === "/about" ? "active" : ""
+              }`}
+            >
+              About Us
+            </Link>
+          </div>
+          <div className=" joinus">
             Are you a therapist?
-            <NavLink to="/join-us" style={{ textDecoration: "none" }}>
+            <Link to="/join-us" style={{ textDecoration: "none" }}>
               <span>Join Us</span>
-            </NavLink>
-          </li>
+            </Link>
+          </div>
         </div>
-
-        <div className="nav-icon" onClick={handleClick}>
-          {toggle ? <FaTimes /> : <AiOutlineMenu />}
-        </div>
+        <button className="toggler" onClick={toggleMenu}>
+          &#9776;
+        </button>
       </div>
-    </div>
+    </nav>
   );
-};
+}
 
-export default NavBar;
-// {/* <NavLink
-//             to="/"
-//             className={({ isActive }) => {}}
-//             activeClassName="activeItem"
-//             exact
-//           >
-//             <li className="linkbefore home nav-item">Home</li>
-//           </NavLink>
-
-//           <NavLink
-//             to="/blog"
-//             style={{ textDecoration: "none" }}
-//             activeClassName="activeItem"
-//           >
-//             <li className="linkbefore nav-item">Blog</li>
-//           </NavLink>
-
-//           <NavLink
-//             to="/about"
-//             style={{ textDecoration: "none" }}
-//             activeClassName="activeItem"
-//           >
-//             <li className="linkbefore nav-item">About Us</li>
-//           </NavLink> */}
+export default Navbar;
