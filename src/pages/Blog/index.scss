@@ -69,6 +69,19 @@
             }
         }
     }
+    .bottom-section {
+        h2 {
+            font-size: 2rem !important;
+        }
+        .context-container {
+            flex-direction: column;
+            .context {
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 
