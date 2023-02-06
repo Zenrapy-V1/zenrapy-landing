@@ -13,18 +13,13 @@
 //   height: 100vh;
 
   .left {
-    // width: 823px;
     padding-left: 6rem;
-    // margin: 100px 100px;
-    .left-text {
-      // margin-bottom: 160px;
-    }
     h3 {
       // width: 866px;
       // height: 182px;
-      font-weight: 600;
-      font-size: 74px;
-      line-height: 111px;
+      font-weight: 900 !important;
+      font-size: 4rem !important;
+      line-height: 1.5;
       text-shadow: 0px 4px 4px rgba(11, 140, 132, 0.3);
 
       .hero-sub-color {
@@ -70,34 +65,23 @@
       height: 70px;
       bottom: -2rem;
       right: 60%;
-      // top: 0;
-      // margin-top: 38rem;
-      // margin-right: 25rem;
     }
 
     .sparkle {
       position: absolute;
       top: 0;
       right: 85%;
-      // margin-top: -29rem;
-      // margin-left: -9rem;
       width: 120px;
       height: 120px;
     }
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1024px) {
   .hero {
     .left {
-      // width: 623px ;
-      // margin: 100px 100px;
-
       h3 {
-        // width: 576px;
-        // height: 182px;
-        font-weight: 600;
-        font-size: 38px;
+        font-size: 2.5rem !important;
         line-height: 72px;
       }
 
@@ -137,7 +121,6 @@
 
       .left-text {
         justify-content: space-around;
-
         margin-top: 4rem;
         text-align: center;
         padding: 0;
@@ -156,11 +139,8 @@
         }
       }
       h3 {
-        // width: 313px;
-        // height: 85px;
-        font-weight: bolder;
-        font-size: 2rem;
-        line-height: 68px;
+        font-weight: 900;
+        font-size: 2.2rem !important;
         margin-bottom: 3rem;
         text-align: left;
         text-shadow: unset;
@@ -168,21 +148,6 @@
     }
 
     .right {
-      // margin-top: 60px;
-      // background-image: url("../../assets/mobileHeroBg.png");
-      // background-position: right bottom;
-      // background-repeat: no-repeat;
-      // background-size: contain;
-      // width: 380px;
-      // height: 389px;
-
-      // margin-left: 0px;
-      // .main-image {
-      //     width: 352px;
-      //     height: 362px;
-      //     margin-right: 140px;
-      // }
-
       .main-image {
         width: 230px;
         height: 329px;
@@ -192,21 +157,14 @@
         display: block;
         width: 322px;
         height: 312px;
-        //margin-top: 150px;
-        // margin: 10rem 1rem 0 1rem;
-
-        // width: 337.74px;
-        // height: 296.92px;
       }
       .ellipse {
-        // display: none;
         position: absolute;
-        // margin-top: 41rem;
-        // margin-right: 25rem;
         right: 0rem;
         bottom: 0rem;
         width: 40px;
         height: 40px;
+        // display: none;
       }
       .sparkle {
         right: 84%;

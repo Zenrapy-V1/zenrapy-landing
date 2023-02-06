@@ -48,12 +48,12 @@ function Navbar() {
               About Us
             </Link>
           </div>
-          <div className=" joinus">
+          {/* <div className=" joinus">
             Are you a therapist?
             <Link to="/join-us" style={{ textDecoration: "none" }}>
               <span>Join Us</span>
             </Link>
-          </div>
+          </div> */}
         </div>
         <button className="toggler" onClick={toggleMenu}>
           &#9776;

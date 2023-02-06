@@ -58,7 +58,7 @@ const Footer = () => {
                   <img src={twitterIcon} alt="twitter logo" />
                 </a>
               </div>
-              <div>
+              {/* <div>
                 <a
                   href="https://wa.me/message/YNQGXF43I7LEA1"
                   target="_blank"
@@ -66,7 +66,7 @@ const Footer = () => {
                 >
                   <img src={whatsappIcon} alt="whatsapp logo" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -1,4 +1,8 @@
 .book-btn {
+  a {
+    color: white;
+    text-decoration: none;
+
     .home-hero-button {
       width: 100%;
       padding: 1rem 2rem;
@@ -9,9 +13,6 @@
       font-weight: 400;
       background: #5441f3;
       border-radius: 8px;
-      a {
-        color: white;
-        text-decoration: none;
-      }
     }
   }
+}

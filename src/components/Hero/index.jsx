@@ -30,7 +30,7 @@ const HeroSection = () => {
                   help you reduce stress?
                   <img className="hero-tick" src={heroTick} alt="" />
                 </li>
-                <li className="hero-list" style={{whiteSpace: "nowrap"}}>
+                <li className="hero-list">
                   Makes your search for real massage ends?
                   <img className="hero-tick" src={heroTick} alt="" />
                 </li>
