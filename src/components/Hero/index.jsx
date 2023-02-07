@@ -12,21 +12,23 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const HeroSection = () => {
   return (
-        <div className="hero">
+    <header>
+      <div className="hero">
+        <div className="pre-left">
           <div className="left">
             <h3>
-              <span className="hero-sub-color">Premium</span> Health <br /> Massage
-              from <br /> professional Therapists
+              <span className="hero-sub-color">Premium</span> Health <br />{" "}
+              Massage from <br /> professional Therapists
             </h3>
             <div className="left-text">
               <ul>
                 <li className="hero-list">
-                  Get Massaged by Top and Talented Massage Therapists <br /> around
+                  Get Massaged by Top and Talented Massage Therapists around
                   your locality.
                   <img className="hero-tick" src={heroTick} alt="" />
                 </li>
                 <li className="hero-list">
-                  Licensed professionals that heals the pain in your <br /> body and
+                  Licensed professionals that heals the pain in your body and
                   help you reduce stress?
                   <img className="hero-tick" src={heroTick} alt="" />
                 </li>
@@ -35,25 +37,37 @@ const HeroSection = () => {
                   <img className="hero-tick" src={heroTick} alt="" />
                 </li>
                 <li className="hero-list">
-                  Leave it to us we got you covered, we built a uber <br /> for
-                  masseurs
+                  Leave it to us we got you covered, we built a uber for massage
+                  therapists
                 </li>
               </ul>
             </div>
-
-            <BookingBtn />
-
-          </div>
-          <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
-            <div className="right">
-              {/* <img className='main-image' src={HeroImage} alt="" />  */}
-              <img className="main-image" src={mainHome} alt="" />
-              <img className="mobile-img" src={mainHomeMobile} alt="" />
-              <img className="ellipse" src={HeroBg2} alt="" />
-              <img className="sparkle" src={HeroBg4} alt="" />
+            <div className="hero-btn-laptop">
+              <BookingBtn />
             </div>
-          </AnimationOnScroll>
+          </div>
         </div>
+        <div className="hero-btn-mobile">
+          <BookingBtn />
+        </div>
+        <AnimationOnScroll
+          animateIn="animate__bounceIn"
+          initiallyVisible="true"
+        >
+          <div className="right">
+            {/* <img className='main-image' src={HeroImage} alt="" />  */}
+            <div className="mainimage-container">
+              <img className="main-image" src={mainHome} alt="" />
+            </div>
+            <div className="mobileimg-container">
+              <img className="mobile-img" src={mainHomeMobile} alt="" />
+            </div>
+            <img className="ellipse" src={HeroBg2} alt="" />
+            <img className="sparkle" src={HeroBg4} alt="" />
+          </div>
+        </AnimationOnScroll>
+      </div>
+    </header>
   );
 };
 

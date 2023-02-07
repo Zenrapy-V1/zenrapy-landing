@@ -8,9 +8,9 @@ const AboutPage = () => {
   return (
     <div className="about-page">
       <div className="about-top">
-        {/* <div className="right-img">
+        <div className="right-img">
           <img src={About} alt="" />
-        </div> */}
+        </div>
 
         <div className="right-about">
           <h3>
