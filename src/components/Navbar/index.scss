@@ -1,128 +1,288 @@
-nav {
-  background-color: white;
-}
-
 .navbar {
-  width: 94%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  justify-content: space-between;
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
 }
 
-.menu {
+.logo-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+.logo {
+  width: 80%;
+}
+
+.menu.show {
+  display: block;
 }
 
 .link {
-  font-size: 1.5rem;
   display: block;
-  margin-inline-end: 3rem;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px;
+}
+.link {
+  display: block;
   text-decoration: none;
   color: black;
-  transition: all 0.2s ease-in-out;
-  &::before {
-    content: "";
-    background: #5441f3;
-    height: 2.5px;
-    border-radius: 3px;
-    width: 0;
-    position: absolute;
-    top: 40px;
-    left: 0px;
-    transition: all 0.2s ease-in-out;
-    // left: -10px;
-  }
-  &:hover::before {
-    width: 100%;
-  }
-  &:hover {
-    color: black;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    scale: 1.1;
-  }
 }
 
-.joinus {
-  font-size: 1.5rem;
-  display: block;
-  text-decoration: none;
-  color: black;
+.link.active {
+  font-weight: bold;
 }
 
 .toggler {
-  display: none;
-  background: transparent;
+  display: block;
+  color: #4169e1;
+  background-color: transparent;
   border: none;
-  font-size: 1.5rem;
-  color: #333;
+  outline: none;
+  font-size: 24px;
   cursor: pointer;
+}
+.cancel-button {
+  display: none;
+  position: absolute;
+  top: 31px;
+  right: 0px;
+  border: none;
+  color: #4169e1;
+  background-color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cancel-button.show {
+  display: block;
+}
+
+.menu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out forwards;
+  padding: 20px;
+  // border-radius: 5px;
+  div {
+    text-align: center;
+  }
+}
+
+.menu.show {
+  display: block;
 }
 
 .link.active {
   color: black;
-  font-weight: 600;
 }
 
-// MEDIA QUERY
-
-@media (max-width: 1100px) {
-  .logo-container {
-    width: 50%;
-    a {
-      img {
-        width: 140px;
-      }
-    }
-  }
-  .toggler {
-    display: unset;
-  }
-  .menu.show {
-    display: block;
-    transform: scale(1);
-    opacity: 1;
+@media only screen and (min-width: 1024px) {
+  nav {
+    padding-top: 2rem;
   }
   .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: white;
-    width: 100%;
-    transform: scale(0);
-    opacity: 0;
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-    // display: none;
-    // backdrop-filter: blur(5px);
+    display: flex;
+    width: auto;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    animation: none;
+    div {
+      margin: 0 20px;
+    }
   }
-
+  .cancel-button {
+    display: none;
+  }
+  .toggler {
+    display: none;
+  }
+  .open-close {
+    display: none;
+  }
   .link {
-    margin-inline-end: unset;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 1.5rem !important;
-    text-align: center;
-    padding-right: 0 !important;
-  }
-
-  .joinus {
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-
-  .navbar {
-    position: relative;
-    // padding-left: 2rem;
-    // padding-right: 2rem;
-    // width: 100% !important;
+    margin-bottom: unset;
+    padding: unset;
+    font-size: 1.5rem;
+    display: block;
+    margin-inline-end: 3rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    &::before {
+      content: "";
+      background: #5441f3;
+      height: 2.5px;
+      border-radius: 3px;
+      width: 0;
+      position: absolute;
+      top: 40px;
+      left: 0px;
+      transition: all 0.2s ease-in-out;
+      // left: -10px;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    &:hover {
+      color: black;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+      scale: 1.1;
+    }
   }
 }
+// This media query sets the .menu to display as a flexbox, with width auto, a static position and no background color, shadow or animation. The .cancel-button is set to display: none and the .toggler is also set to display: none. The media query only applies to screens with a minimum width of 768px, which is typical for laptops.
+
+// .menu {
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   right: 0;
+//   width: 100%;
+//   background-color: #fff;
+//   padding: 10px 20px;
+//   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+//   animation: fadeIn 0.3s ease-in-out forwards;
+// }
+
+// nav {
+//   background-color: white;
+// }
+
+// .navbar {
+//   width: 94%;
+//   margin: 0 auto;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 2rem 0;
+// }
+
+// .menu {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .link {
+//   font-size: 1.5rem;
+//   display: block;
+//   margin-inline-end: 3rem;
+//   text-decoration: none;
+//   color: black;
+//   transition: all 0.2s ease-in-out;
+//   &::before {
+//     content: "";
+//     background: #5441f3;
+//     height: 2.5px;
+//     border-radius: 3px;
+//     width: 0;
+//     position: absolute;
+//     top: 40px;
+//     left: 0px;
+//     transition: all 0.2s ease-in-out;
+//     // left: -10px;
+//   }
+//   &:hover::before {
+//     width: 100%;
+//   }
+//   &:hover {
+//     color: black;
+//     font-weight: 600;
+//     transition: all 0.2s ease-in-out;
+//     scale: 1.1;
+//   }
+// }
+
+// .joinus {
+//   font-size: 1.5rem;
+//   display: block;
+//   text-decoration: none;
+//   color: black;
+// }
+
+// .toggler {
+//   display: none;
+//   background: transparent;
+//   border: none;
+//   font-size: 1.5rem;
+//   color: #333;
+//   cursor: pointer;
+// }
+
+// .link.active {
+//   color: black;
+//   font-weight: 600;
+// }
+
+// // MEDIA QUERY
+
+// @media (max-width: 1100px) {
+//   .logo-container {
+//     width: 50%;
+//     a {
+//       img {
+//         width: 140px;
+//       }
+//     }
+//   }
+//   .toggler {
+//     display: unset;
+//   }
+//   .menu.show {
+//     display: block;
+//     transform: scale(1);
+//     opacity: 1;
+//   }
+//   .menu {
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     right: 0;
+//     z-index: 1;
+//     background-color: white;
+//     width: 100%;
+//     transform: scale(0);
+//     opacity: 0;
+//     transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+//     // display: none;
+//     // backdrop-filter: blur(5px);
+//   }
+
+//   .link {
+//     margin-inline-end: unset;
+//     padding-top: 2rem;
+//     padding-bottom: 2rem;
+//     font-size: 1.5rem !important;
+//     text-align: center;
+//     padding-right: 0 !important;
+//   }
+
+//   .joinus {
+//     text-align: center;
+//     padding-bottom: 2rem;
+//   }
+
+//   .navbar {
+//     position: relative;
+//     // padding-left: 2rem;
+//     // padding-right: 2rem;
+//     // width: 100% !important;
+//   }
+// }

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./index.scss";
-import gettingStartedIllustration1 from "../../assets/gettingStartedIllustration1.png";
+import gettingStartedIllustration1 from "../../assets/gettingStartedIllustration1.svg";
 import gettingStartedIllustration2 from "../../assets/gettingStartedIllustration2.png";
 import gettingStartedIllustration3 from "../../assets/gettingStartedIllustration3.png";
-import gettingStartedIllustration4 from "../../assets/gettingStartedIllustration4.png";
-import gettingStartedIllustration5 from "../../assets/gettingStartedIllustration5.png";
+import gettingStartedIllustration4 from "../../assets/gettingStartedIllustration4.svg";
+import gettingStartedIllustration5 from "../../assets/gettingStartedIllustration5.svg";
 import gettingStartedIllustration6 from "../../assets/gettingStartedIllustration6.png";
 
 const gettingStarted = () => {

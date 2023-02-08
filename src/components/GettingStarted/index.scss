@@ -31,6 +31,10 @@
   }
 }
 
+.gpt3__possibility-image1 {
+  display: none;
+}
+
 @media screen and (max-width: 960px) {
   .illustration-container-image {
     display: none;
@@ -44,6 +48,9 @@
   }
   .content2 {
     text-align: center !important;
+  }
+  .gpt3__possibility-image1 {
+    display: unset !important;
   }
 }
 
