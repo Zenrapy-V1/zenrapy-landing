@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 10rem;
+  // margin-top: 10rem;
   .container1 {
     background: #9ffba21a;
   }
@@ -10,11 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 3rem 0;
+    padding: 2rem 0;
     .illustration-content {
       display: flex;
       flex-direction: column;
-      row-gap: 1rem;
+      // row-gap: 1rem;
       .gradient-text {
         color: #606161;
         font-size: 1.8rem;
@@ -42,8 +42,11 @@
   .illustration-content {
     justify-content: center;
     text-align: center;
+    h4 {
+      font-size: 13px !important;
+    }
     p {
-      font-size: 1rem !important;
+      font-size: 10px !important;
     }
   }
   .content2 {
@@ -51,6 +54,19 @@
   }
   .gpt3__possibility-image1 {
     display: unset !important;
+    margin-bottom: .5rem;
+  }
+  .illustration1 {
+    background: #F0EFF81A !important;
+  }
+  .illustration2 {
+    background: #F0F8EF1A !important;
+    margin: 2rem 0;
+  }
+  .illustration3 {
+    background: #F8EFF51A !important;
+    margin-bottom: 2.5rem;
+
   }
 }
 

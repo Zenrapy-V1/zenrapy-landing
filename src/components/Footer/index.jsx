@@ -17,7 +17,7 @@ const Footer = () => {
             <div className="logo">
                 <img src={Logo} alt="" />
             </div>
-            <p>Zenrapy connects you to top talented masssage therapists.</p>
+            <p>Zenrapy connects you to top talented <br /> masssage therapists.</p>
           </div>
 
           <div className="right-section">

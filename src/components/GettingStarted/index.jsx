@@ -12,7 +12,7 @@ const gettingStarted = () => {
     <div className="wrapper">
       <h2>How to get started?</h2>
       {/* Illustration1 */}
-      <div className="illustration-container container1 illustration1">
+      <div className="illustration-container container1 illustration1 ">
         <div className="illustration-content">
           <div className="gpt3__possibility-image1">
             <img src={gettingStartedIllustration1} alt="possibility" />
@@ -33,7 +33,7 @@ const gettingStarted = () => {
         </div>
       </div>
       {/* Illustration2 */}
-      <div className="illustration-container">
+      <div className="illustration-container illustration2">
         <div className="illustration-container-image">
           <img
             className="main-illustration"
@@ -54,7 +54,7 @@ const gettingStarted = () => {
         </div>
       </div>
       {/* Illustration3 */}
-      <div className="illustration-container container1">
+      <div className="illustration-container container1 illustration3">
         <div className="illustration-content">
           <div className="gpt3__possibility-image1">
             <img src={gettingStartedIllustration5} alt="possibility" />

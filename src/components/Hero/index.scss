@@ -2,7 +2,7 @@ header {
   .hero {
     display: flex;
     flex-direction: column;
-    padding-bottom: 4rem;
+    // padding-bottom: 4rem;
     overflow-x: hidden;
     overflow-y: hidden;
     .pre-left {
@@ -47,21 +47,30 @@ header {
       }
       .mobileimg-container {
         width: 100%;
+        position: relative;
         img {
-          width: 90%;
+          width: 338px;
+        }
+        .mobileImg {
+          position: absolute;
+          left: 70px;
+          top: 20px;
+          width: 250px;
+          border-radius: 5px;
+          /* width: 100%; */
         }
       }
       .ellipse {
         position: absolute;
-        width: 45px;
-        right: 0;
+        width: 30px;
+        right: 30px;
         bottom: 10px;
       }
       .sparkle {
         position: absolute;
         width: 60px;
-        top: 0;
-        left: 0;
+        top: -20px;
+        left: 20px;
       }
     }
   }
@@ -70,17 +79,117 @@ header {
   }
   .hero-btn-mobile {
     width: 90%;
-    margin: 1.5rem auto;
+    margin: 0 auto;
+    padding: 1.5rem 0 3rem 0;
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 320px) {
+  .mobileimg-container {
+    img {
+      width: 320px !important;
+    }
+    .mobileImg {
+      position: absolute;
+      left: 45px !important;
+      top: 20px !important;
+      width: 230px !important;
+      border-radius: 5px;
+      /* width: 100%; */
+  }
+  }
+  .ellipse {
+    bottom: 0 !important;
+    right: 10px !important;
+  }
+  .sparkle {
+    left: 0px !important;
+  }
+  
+}
+@media screen and (min-width: 375px) {
+  .mobileimg-container {
+    img {
+      width: 320px !important;
+    }
+    .mobileImg {
+      position: absolute;
+      left: 75px !important;
+      top: 20px !important;
+      width: 230px !important;
+      border-radius: 5px;
+      /* width: 100%; */
+  }
+  }
+  .ellipse {
+    bottom: 0 !important;
+    right: 40px !important;
+  }
+  .sparkle {
+    left: 30px !important;
+  }
+  
+}
+@media screen and (min-width: 425px) {
+  .mobileimg-container {
+    img {
+      width: 320px !important;
+    }
+    .mobileImg {
+      position: absolute;
+      left: 95px !important;
+      top: 20px !important;
+      width: 230px !important;
+      border-radius: 5px;
+      /* width: 100%; */
+  }
+  }
+  .ellipse {
+    bottom: 0 !important;
+    right: 70px !important;
+  }
+  .sparkle {
+    left: 50px !important;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
   .left-text {
     ul {
       text-align: left !important;
     }
   }
+  .mobileImg {
+    position: absolute;
+    left: 35% !important;
+    top: 20px !important;
+    width: 230px !important;
+    border-radius: 5px;
 }
+}
+
+// @media screen and (min-width: 800px) {
+//   .mobileimg-container {
+//     img {
+//       width: 320px !important;
+//     }
+//     .mobileImg {
+//       position: absolute;
+//       left: 35% !important;
+//       top: 20px !important;
+//       width: 230px !important;
+//       border-radius: 5px;
+//   }
+//   }
+//   .ellipse {
+//     bottom: 0 !important;
+//     right: 70px !important;
+//   }
+//   .sparkle {
+//     left: 50px !important;
+//   }
+// }
 
 @media screen and (min-width: 1050px) {
   header {
@@ -100,7 +209,7 @@ header {
     flex-direction: row !important;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 10rem;
+    padding: 10rem 0 3rem;
     // width: 90%;
     // margin: 0 auto !important;;
     .left {
@@ -120,6 +229,18 @@ header {
   }
   .hero-btn-mobile {
     display: none !important;
+  }
+
+  .right {
+    position: relative;
+    .mainimage-container {
+      .hero-image1 {
+        position: absolute;
+        width: 500px;
+        top: 10%;
+        right: 10%;
+      }
+    }
   }
   .main-image {
     display: unset !important;
@@ -142,8 +263,8 @@ header {
   }
   .sparkle {
     width: 120px !important;
-    left: -40px !important;
-    top: 20px !important;
+    left: -65px !important;
+    top: -10px !important;
   }
   .pre-left {
     padding: unset !important;

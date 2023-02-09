@@ -1,6 +1,9 @@
 .feelingbetter {
   width: 88%;
-  margin: 8rem auto;
+  margin: 0 auto;
+  h2 {
+    margin-top: 2rem;
+  }
   .feel-better {
     display: flex;
     // justify-content: space-between;
@@ -71,7 +74,7 @@
             width: 90% !important;
             p{
                 margin-top: 3rem;
-                font-size: 1rem;
+                font-size: 13px;
                 text-align: center;
             }
             .btn-feeling-better {

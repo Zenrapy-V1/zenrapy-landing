@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./index.scss";
-import HeroImage from "../../assets/heroImage1.png";
-import MobileImage from "../../assets/heroImage2.png";
-import mainHome from "../../assets/mainHome.png";
-import mainHomeMobile from "../../assets/mainHomeMobile.png";
+import HeroImage from "../../assets/heroImage.png"
+import MobileHeroImage from "../../assets/mobileHeroBg.png"
+import HeroImage1 from "../../assets/heroImage1.png";
+import MobileImage from "../../assets/straight.png";
+// import mainHome from "../../assets/mainHome.png";
+// import mainHomeMobile from "../../assets/mainHomeMobile.png";
 import HeroBg2 from "../../assets/heroBg2.png";
 import HeroBg4 from "../../assets/heroBg4.png";
 import heroTick from "../../assets/hero-tick.png";
@@ -57,10 +59,12 @@ const HeroSection = () => {
           <div className="right">
             {/* <img className='main-image' src={HeroImage} alt="" />  */}
             <div className="mainimage-container">
-              <img className="main-image" src={mainHome} alt="" />
+              <img className="hero-image1" src={HeroImage1} alt="" />
+              <img className="main-image" src={HeroImage} alt="" />
             </div>
             <div className="mobileimg-container">
-              <img className="mobile-img" src={mainHomeMobile} alt="" />
+              <img className="mobileHeroImg" src={MobileHeroImage} alt="" />
+              <img src={MobileImage} className="mobileImg" alt="" />
             </div>
             <img className="ellipse" src={HeroBg2} alt="" />
             <img className="sparkle" src={HeroBg4} alt="" />

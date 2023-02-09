@@ -49,14 +49,27 @@ footer {
     .left-section {
         width: 100% !important;
         text-align: center;
+        .logo {
+            img {
+                width: 121px;
+            }
+        }
         p {
-            padding-bottom: 2rem;
-            font-size: 1.3rem !important;
+            padding-bottom: .5rem;
+            font-size: 13px !important;
         }
     }
     .socials {
         column-gap: 1rem !important;
         justify-content: center !important;
+        div {
+            a {
+                img {
+                    width: 33px !important;
+                    height: unset !important;
+                }
+            }
+        }
     }
 }
 

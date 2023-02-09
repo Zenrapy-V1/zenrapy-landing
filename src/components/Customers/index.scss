@@ -4,7 +4,7 @@
     padding-bottom: 8rem;
     h2 {
         margin-top: 0;
-        padding: 4rem 0;
+        padding: 1.5rem 0;
     }
     .customer-column {
         display: grid;
@@ -41,6 +41,20 @@
     }
     .block {
         row-gap: .5rem !important;
+        p {
+            font-size: 14px;
+        }
+    }
+    .customer-img {
+        width: 100%;
+        text-align: center;
+        padding-bottom: .5rem;
+        img {
+            width: 80px;
+        }
+    }
+    .customer3 {
+        height: unset !important;
     }
 }
 

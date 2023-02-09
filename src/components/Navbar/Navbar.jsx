@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import Hamburger from "../../assets/hamburger.svg"
 import Logo from "../../assets/logo1.png";
 import "./index.scss";
 
@@ -51,7 +52,7 @@ function Navbar() {
         </div>
         <div className="open-close">
           <button className={`toggler ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
-            &#9776;
+            <img src={Hamburger} alt="Hamburger" />
           </button>
           <button className={`cancel-button ${isOpen ? "show" : ""}`} onClick={toggleMenu}>
             &#10005;
