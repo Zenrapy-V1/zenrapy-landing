@@ -93,7 +93,7 @@ header {
   ul {
     li {
       line-height: 50px;
-      font-size: 30px !important;
+      font-size: 25px !important;
       padding-bottom: 1.5rem !important;
       text-align: start !important;
       img {
@@ -140,10 +140,12 @@ header {
   }
   .main-image {
     display: unset !important;
-    width: 100%;
+    width: 90% !important;
+    margin-right: 0 !important;
   }
   .mainimage-container {
     width: 100%;
+    transform: translateX(5%);
     .main-image {
       width: 100%;
     }
@@ -154,7 +156,7 @@ header {
   .ellipse {
     display: unset !important;
     position: absolute;
-    left: 150px;
+    left: 180px;
     bottom: -70px;
     // left: 0;
   }
@@ -163,7 +165,7 @@ header {
     width: 160px;
     position: absolute;
     top: 0;
-    left: -50px;
+    left: 0px;
   }
   .pre-left {
     padding: unset !important;
