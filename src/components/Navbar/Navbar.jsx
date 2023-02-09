@@ -1,54 +1,73 @@
-import React, { useState } from 'react'
-import "./index.scss"
-import { BsChevronDown, } from 'react-icons/bs'
-import { AiOutlineMenu,} from 'react-icons/ai'
-import {FaTimes } from 'react-icons/fa'
-import Logo from "../../assets/logo2.png"
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import Hamburger from "../../assets/hamburger.svg"
+import Logo from "../../assets/logo1.png";
+import "./index.scss";
 
-const NavBar = () => {
-    const [toggle, setToggle] = useState(false);
-    // const [navbar, setNavbar] = useState(false);
+function Navbar() {
+  const [isOpen, setOpen] = useState(false);
+  const location = useLocation();
 
-        const handleClick = () => {
-        setToggle(!toggle);
-        };
+  const toggleMenu = () => {
+    setOpen(!isOpen);
+  };
 
-    return (  
-        <div className='nav-container'>
-            <div className="navbar" >
-                <div className='logo'>
-                    <Link to="/" style={{ textDecoration: 'none' }}>
-                        <li><img src={Logo} alt="" /></li>
-                    </Link>
-                </div>
-                <div className={toggle ? "nav-menu active" : "nav-menu"}>
-                <Link to="/" style={{ textDecoration: 'none' }}>
-                    <li className='home nav-item'>Home</li>
-                </Link>
-                <Link to="/blog" style={{ textDecoration: 'none' }}>
-                    <li className='nav-item'>Blog</li>
-                </Link>
-                <Link to="/about" style={{ textDecoration: 'none' }}>
-                    <li className='nav-item'>About Us</li>
-                </Link>
-                    {/* <Link to="/join-us" style={{ textDecoration: 'none' }}>
-                        <li className='join nav-item'>                
-                        <span>
-                            <button>
-                            Are you a therapist ? Join Us
-                        </button></span>
-                        </li>
-                    </Link> */}
-                    
-                </div>
-                
-                <div className="nav-icon" onClick={handleClick}>
-                    {toggle ? <FaTimes /> : <AiOutlineMenu />}
-                </div>
-            </div>
+  return (
+    <nav>
+      <div className="navbar">
+        <div className="logo-container">
+          <Link to="/">
+            <img src={Logo} className="logo" alt="" />
+          </Link>
         </div>
-    );
+        <div className={`menu ${isOpen ? "show" : ""} ${!isOpen ? "fadeOut" : ""}`}>
+          <div>
+            <Link
+              to="/"
+              className={`link ${location.pathname === "/" ? "active" : ""}`}
+            >
+              Home
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/blog"
+              className={`link ${
+                location.pathname === "/blog" ? "active" : ""
+              }`}
+            >
+              Blog
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/about"
+              className={`link ${
+                location.pathname === "/about" ? "active" : ""
+              }`}
+            >
+              About Us
+            </Link>
+          </div>
+        </div>
+        <div className="open-close">
+          <button className={`toggler ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
+            <img src={Hamburger} alt="Hamburger" />
+          </button>
+          <button className={`cancel-button ${isOpen ? "show" : ""}`} onClick={toggleMenu}>
+            &#10005;
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
 }
- 
-export default NavBar;
+
+export default Navbar;
+
+// {/* <div className=" joinus">
+//   Are you a therapist?
+//   <Link to="/join-us" style={{ textDecoration: "none" }}>
+//     <span>Join Us</span>
+//   </Link>
+// </div> */}

@@ -10,7 +10,9 @@ const Blog = () => {
 
     return (  
         <div className='about'>
-            <NavBar />
+            <div style={{backgroundColor: ""}}>
+                <NavBar />
+            </div>
             <BlogPage />
             <Footer />
            
