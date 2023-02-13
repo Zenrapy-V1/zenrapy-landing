@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Hamburger from "../../assets/hamburger.svg"
+import Hamburger from "../../assets/hamburger.svg";
 import Logo from "../../assets/logo1.png";
 import "./index.scss";
 
@@ -20,7 +20,9 @@ function Navbar() {
             <img src={Logo} className="logo" alt="" />
           </Link>
         </div>
-        <div className={`menu ${isOpen ? "show" : ""} ${!isOpen ? "fadeOut" : ""}`}>
+        <div
+          className={`menu ${isOpen ? "show" : ""} ${!isOpen ? "fadeOut" : ""}`}
+        >
           <div>
             <Link
               to="/"
@@ -49,12 +51,24 @@ function Navbar() {
               About Us
             </Link>
           </div>
+          <div className=" joinus">
+            Are you a therapist?
+            <Link to="/join-us" style={{ textDecoration: "none" }}>
+              <span>Join Us</span>
+            </Link>
+          </div>
         </div>
         <div className="open-close">
-          <button className={`toggler ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
+          <button
+            className={`toggler ${isOpen ? "hidden" : ""}`}
+            onClick={toggleMenu}
+          >
             <img src={Hamburger} alt="Hamburger" />
           </button>
-          <button className={`cancel-button ${isOpen ? "show" : ""}`} onClick={toggleMenu}>
+          <button
+            className={`cancel-button ${isOpen ? "show" : ""}`}
+            onClick={toggleMenu}
+          >
             &#10005;
           </button>
         </div>
@@ -64,10 +78,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-// {/* <div className=" joinus">
-//   Are you a therapist?
-//   <Link to="/join-us" style={{ textDecoration: "none" }}>
-//     <span>Join Us</span>
-//   </Link>
-// </div> */}
