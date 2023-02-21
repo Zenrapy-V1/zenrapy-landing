@@ -1,0 +1,39 @@
+.provider {
+  background: #0b8c84;
+  .providerWrapper {
+    width: 94%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    align-items: flex-start;
+    .imgProvider {
+      width: 100%;
+      img {
+        width: 62px;
+      }
+    }
+    .rightProviderContent {
+      .rightProvider {
+        h6 {
+          font-size: 11px;
+          color: white;
+        }
+        p {
+          font-size: 6px;
+          color: white;
+        }
+      }
+      .providerBtn {
+        button {
+            background: #5441F3;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+      }
+    }
+  }
+}
