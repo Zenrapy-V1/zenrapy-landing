@@ -17,12 +17,12 @@ header {
   .hero {
     display: flex;
     flex-direction: column;
-    // padding-bottom: 4rem;
     overflow-x: hidden;
     overflow-y: hidden;
+    // padding-bottom: 4rem;
     .pre-left {
-      // padding: 4rem 0;
       background-color: #f8f8f8;
+      // padding: 4rem 0;
       .left {
         width: 90%;
         margin: 0 auto;
@@ -50,8 +50,9 @@ header {
         display: none;
       }
       .mobileimg-container {
-        width: 100%;
+        width: 90%;
         position: relative;
+        margin: 0 auto;
         img {
           width: 338px;
         }
@@ -122,6 +123,7 @@ header {
     width: 94% !important;
     margin: 0 auto !important;
     .left {
+      width: 100% !important;
       .left-text {
         width: 80%;
       }
@@ -152,7 +154,7 @@ header {
   }
   .main-image {
     display: unset !important;
-    width: 100% !important;
+    width: 400px !important;
     margin-right: 0 !important;
   }
   .mainimage-container {

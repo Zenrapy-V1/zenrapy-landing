@@ -23,7 +23,7 @@ const Landing = () => {
            <FeelingBetter />
            <GettingStarted />
            <Customer />
-           <ProviderNetwork />
+           {/* <ProviderNetwork /> */}
            <AnimationOnScroll animateIn="animate__bounceIn" initiallyVisible="true">
               <Booking />
            </AnimationOnScroll>
