@@ -5,7 +5,7 @@ import HeroSection from "../../components/Hero"
 import FeelingBetter from "../../components/FeelingBetter"
 import GettingStarted from "../../components/GettingStarted"
 import Customer from '../../components/Customers'
-import ProviderNetwork from "../../components/ProviderNetwork/ProviderNetwork"
+// import ProviderNetwork from "../../components/ProviderNetwork/ProviderNetwork"
 import Booking from "../../components/BookSession"
 import Footer from '../../components/Footer'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
