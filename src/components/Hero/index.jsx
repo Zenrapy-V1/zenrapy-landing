@@ -15,13 +15,13 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 const HeroSection = () => {
   return (
     <header>
+            <h3>
+              <span className="hero-sub-color">Premium</span> Health{" "}
+              Massage from professional Therapists
+            </h3>
       <div className="hero">
         <div className="pre-left">
           <div className="left">
-            <h3>
-              <span className="hero-sub-color">Premium</span> Health <br />{" "}
-              Massage from <br /> professional Therapists
-            </h3>
             <div className="left-text">
               <ul>
                 <li className="hero-list">
@@ -58,16 +58,16 @@ const HeroSection = () => {
         >
           <div className="right">
             {/* <img className='main-image' src={HeroImage} alt="" />  */}
-            <div className="mainimage-container">
               {/* <img className="hero-image1" src={HeroImage1} alt="" /> */}
+              {/* <img src={MobileImage} className="mobileImg" alt="" /> */}
+            <div className="mainimage-container">
               <img className="main-image" src={mainHome} alt="" />
             </div>
             <div className="mobileimg-container">
               <img className="mobileHeroImg" src={mainHomeMobile} alt="" />
-              {/* <img src={MobileImage} className="mobileImg" alt="" /> */}
             </div>
-            <img className="ellipse" src={HeroBg2} alt="" />
-            <img className="sparkle" src={HeroBg4} alt="" />
+            {/* <img className="ellipse" src={HeroBg2} alt="" />
+            <img className="sparkle" src={HeroBg4} alt="" /> */}
           </div>
         </AnimationOnScroll>
       </div>
