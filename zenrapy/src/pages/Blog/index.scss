@@ -9,7 +9,7 @@
     h1 {
       line-height: 1.8;
       .heading-dark {
-        font-size: 96px;
+        font-size: 5rem;
         font-weight: 600;
         font-style: italic;
         text-shadow: 0px 4px 4px rgba(11, 140, 132, 0.3);
@@ -35,21 +35,25 @@
     }
     .context-container {
       display: flex;
-      align-items: center;
-      width: 88%;
-      margin: 0 auto;
+      align-items: flex-start;
+      width: 94%;
+      margin: 5rem auto 0;
       .context {
         width: 94%;
+        margin-top: 2rem;
         p {
           // padding-top: 3.5rem;
-          font-size: 40px;
+          font-size: 1.9rem;
           line-height: 1.8;
+          img {
+            width: 50px;
+          }
         }
       }
       .context-image-container {
-        width: 100%;
+        width: 70%;
         img {
-          width: 810px;
+          width: 100%;
         }
       }
     }
@@ -64,8 +68,8 @@
       left: 55%;
     }
     .polygon2 {
-      top: -9%;
-      right: 18%;
+      top: -7%;
+      right: 25%;
     }
     .polygon3 {
       top: -5%;
