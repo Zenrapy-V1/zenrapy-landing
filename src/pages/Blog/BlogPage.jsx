@@ -32,7 +32,7 @@ const BlogPage = () => {
             <p>
               Hello, the page you are tying to view is under construction and
               temporarily unavailable. The team is doing some work behind the
-              scenes, do check back later. <img src={Smiley} alt="smiley" /> <br /> 
+              scenes, do check back later. <img src={Smiley} className="smiley" alt="smiley" /> <br /> 
               <p className="thanks">Thank you</p>
             </p>
           </div>

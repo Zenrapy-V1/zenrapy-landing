@@ -99,6 +99,7 @@
     .navbar {
       align-items: center !important;
       padding-bottom: 2rem;
+      width: 90%;
     }
   }
   .logo-container {
@@ -112,7 +113,7 @@
     box-shadow: none;
     animation: none;
     div {
-      margin: 0 50px;
+      margin: 0 5px;
     }
   }
   .cancel-button {
@@ -127,7 +128,7 @@
   .link {
     margin-bottom: unset;
     padding: unset;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: block;
     margin-inline-end: 3rem;
     text-decoration: none;
@@ -153,6 +154,23 @@
       font-weight: 600;
       transition: all 0.2s ease-in-out;
       scale: 1.1;
+    }
+  }
+  .joinus {
+    font-size: 1.3rem; 
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    div {
+      margin: 0 15px !important;
+    }
+    .link {
+      font-size: 1.3rem !important;
+    }
+    .joinus {
+      font-size: 1.3rem !important;
     }
   }
 }

@@ -1,7 +1,10 @@
 .wrapper {
   // margin-top: 10rem;
   .container1 {
-    background: #9ffba21a;
+    background: #9FFBA20A;
+  }
+  .container3 {
+    background: #9FC4FB0A;
   }
   .illustration1 {
     column-gap: 14rem;
@@ -19,15 +22,26 @@
         color: #606161;
         font-size: 1.8rem;
         font-weight: 600;
+        margin-bottom: 2rem;
       }
       p {
         color: #606161;
-        font-size: 1.3rem;
+        font-size: 16px;
+        line-height: 36px;
       }
     }
     .content2 {
       text-align: right;
     }
+  }
+  .main1 {
+    width: 100px;
+  }
+  .main2 {
+    width: 200px;
+  }
+  .main3 {
+    width: 300px;
   }
 }
 
