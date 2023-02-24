@@ -113,6 +113,7 @@
     }
     .context-container {
       flex-direction: column;
+      align-items: center !important;
       .context {
         p {
           font-size: 14px !important;
