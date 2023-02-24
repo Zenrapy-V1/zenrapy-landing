@@ -49,12 +49,12 @@ function Navbar() {
               About Us
             </Link>
           </div>
-          <div className=" joinus">
+          {/* <div className=" joinus">
             Are you a therapist?
             <Link to="/join-us" style={{ textDecoration: "none" }}>
               <span>Join Us</span>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="open-close">
           <button className={`toggler ${isOpen ? "hidden" : ""}`} onClick={toggleMenu}>
