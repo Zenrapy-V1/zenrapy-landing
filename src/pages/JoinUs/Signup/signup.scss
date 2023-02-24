@@ -1,0 +1,23 @@
+.signWrapper {
+  .left {
+    height: 1300px;
+    .imgContainer {
+      height: 100%;
+    }
+  }
+  .right {
+    form {
+      .form {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 2rem;
+        .email {
+            margin-bottom: 3rem;
+        }
+        .test {
+            grid-column: 1/span2;
+        }
+      }
+    }
+  }
+}

@@ -26,7 +26,7 @@ const gettingStarted = () => {
         </div>
         <div className="illustration-container-image">
           <img
-            className="main-illustration"
+            className="main-illustration main1"
             src={gettingStartedIllustration2}
             alt="possibility"
           />
@@ -36,7 +36,7 @@ const gettingStarted = () => {
       <div className="illustration-container illustration2">
         <div className="illustration-container-image">
           <img
-            className="main-illustration"
+            className="main-illustration main2"
             src={gettingStartedIllustration3}
             alt="possibility"
           />
@@ -68,7 +68,7 @@ const gettingStarted = () => {
         </div>
         <div className="illustration-container-image">
           <img
-            className="main-illustration"
+            className="main-illustration main3"
             src={gettingStartedIllustration6}
             alt="possibility"
           />

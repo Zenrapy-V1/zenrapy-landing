@@ -1,7 +1,10 @@
 .wrapper {
   // margin-top: 10rem;
   .container1 {
-    background: #9ffba21a;
+    background: #9FFBA20A;
+  }
+  .container3 {
+    background: #9FC4FB0A;
   }
   .illustration1 {
     column-gap: 14rem;
@@ -17,17 +20,26 @@
       // row-gap: 1rem;
       .gradient-text {
         color: #606161;
-        font-size: 1.8rem;
+        font-size: 48px;
         font-weight: 600;
       }
       p {
         color: #606161;
-        font-size: 1.3rem;
+        font-size: 24px;
       }
     }
     .content2 {
       text-align: right;
     }
+  }
+  .main1 {
+    width: 100px;
+  }
+  .main2 {
+    width: 200px;
+  }
+  .main3 {
+    width: 300px;
   }
 }
 

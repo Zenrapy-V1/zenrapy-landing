@@ -1,0 +1,119 @@
+.signWrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .left {
+    .imgContainer {
+      // width: 100%;
+      // height: 71rem;
+      img {
+        height: 100%;
+        width: 715px;
+      }
+    }
+  }
+  .right {
+    padding-inline-end: 4rem;
+    padding-top: 2rem;
+    // padding-bottom: 10rem;
+    // padding: 2rem 0rem 3rem 4rem;
+    .logoContainer {
+      display: flex;
+      justify-content: end;
+    }
+    .login {
+      font-size: 48px;
+      font-weight: 600;
+    }
+    .signup {
+      font-size: 20px;
+      a {
+        text-decoration: none;
+      }
+    }
+    .googleOR {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 7rem;
+      //   row-gap: 3rem;
+      .googlebtn {
+        button {
+          background-color: black;
+          color: white;
+          font-weight: 500;
+          border-radius: 8px;
+          padding: 0.5rem 3rem;
+          cursor: pointer;
+          img {
+            margin-inline-end: 1rem;
+          }
+        }
+      }
+      p {
+        font-size: 48px;
+        font-weight: 900;
+        margin: 5rem 0;
+      }
+    }
+    form {
+        .email {
+            margin-bottom: 2rem;
+        }
+        input {
+          font-size: 24px;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+            padding-bottom: 1rem;
+            width: 100%;
+            &::placeholder {
+                font-size: 24px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .remember-forgotten {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            font-size: 15px;
+            .checkbox {
+              cursor: pointer;
+                label {
+                  display: flex;
+                  column-gap: .3rem;
+                }
+            }
+            .forgotten {
+                button {
+                    border: none;
+                    background-color: unset;
+                    color: #171ECC;
+                    &:hover {
+                      color: #00008b;
+                    }
+                }
+            }
+        }
+        .loginBtn {
+            display: flex;
+            justify-content: center;
+            margin-top: 8rem;
+            button {
+                width: 100%;
+                color: white;
+                background-color: #5441F3;
+                padding: 1rem;
+                font-size: 24px;
+                font-weight: 600;
+                border-radius: 24px;
+                border: none;
+            }
+        }
+    } 
+  }
+}
+
+@media screen and (max-width: 768px){
+  
+}
