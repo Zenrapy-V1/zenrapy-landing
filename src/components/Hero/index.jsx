@@ -15,9 +15,13 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 const HeroSection = () => {
   return (
     <header>
-            <h3>
+            <h3 className="header-lg">
               <span className="hero-sub-color">Premium</span> Health <br />{" "}
               Massage from professional Therapists
+            </h3>
+            <h3 className="header-sm">
+              <span className="hero-sub-color">Premium</span> Health
+              Massage <br /> from professional Therapists
             </h3>
       <div className="hero">
         <div className="pre-left">
