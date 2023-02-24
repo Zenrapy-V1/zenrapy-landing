@@ -11,7 +11,7 @@ const BookSession = () => {
       <h2>Healthcare feels better at home</h2>
       <div className="book">
         <div className="booking-session-content">
-          <h4>Book a session and Get Massaged <br /> in comfort</h4>
+          <h4>Book a session and Get Massaged in comfort</h4>
           <p>
             Book a session, Give a location, A massage therapist <br /> of your choice
             will be with you in a jiffy.

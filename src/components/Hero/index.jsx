@@ -16,7 +16,7 @@ const HeroSection = () => {
   return (
     <header>
             <h3>
-              <span className="hero-sub-color">Premium</span> Health{" "}
+              <span className="hero-sub-color">Premium</span> Health <br />{" "}
               Massage from professional Therapists
             </h3>
       <div className="hero">
